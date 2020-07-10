@@ -1,5 +1,0 @@
-ansible_user: 'ATT9047833'
-ansible_ssh_pass: 'M3x#4Tt.20i9Fa'
-ansible_port: 22
-ansible_become: no
-ansible_timeout: 100

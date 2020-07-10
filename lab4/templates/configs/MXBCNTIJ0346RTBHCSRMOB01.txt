@@ -1,0 +1,8 @@
+configuret erminal
+!
+vrf definition ATT_LTE
+ address-family ipv4
+  route-target export 7438:1228101
+  route-target import 7438:1228101
+!
+write

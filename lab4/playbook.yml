@@ -1,7 +1,7 @@
 ---
 
  - name: PLAY1 - ISSUE SNMP COMMANDS
-   hosts: csr
+   hosts: monterrey
    gather_facts: false
    connection: local
   
@@ -11,7 +11,13 @@
         ios_command:
           commands:
             - show run | inc snmp
+          provider: "{{ base_provider }}"
         register: snmp
+
       - name: show result 
         debug:
-          var: snmp["stdout_lines"][0]
+          var: snmp["stdout_lines"][0][0]
+
+      - name: show result complete
+        debug:
+          var: snmp

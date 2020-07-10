@@ -1,0 +1,34 @@
+---
+
+ - name: PLAY1 - COLLECT HOSTNAME
+   hosts: mty-asr
+   gather_facts: false
+   connection: local
+  
+   tasks:
+
+      - name: COLLECT HOSTNAME´S FOR IOS
+        ios_facts:
+          provider: "{{ base_provider }}"
+
+      - name: DEBUG HOSTNAME
+        debug:
+          var: ansible_net_hostname
+
+
+ - name: PLAY2 - GENERATE SCRIPTS FOR DALIA
+   hosts: monterrey
+   gather_facts: false
+   connection: local
+  
+   tasks:
+
+      - name: GENERATE CONFIGS FOR EACH OS
+        template:
+          src: "./templates/{{ os }}.j2"
+          dest: "./templates/configs/{{ inventory_hostname }}.txt"
+
+      - name: GENERATE CONFIGS FOR EACH WITH HOSTNAME
+        template:
+          src: "./templates/{{ os }}.j2"
+          dest: "./templates/configs/{{ ansible_net_hostname }}.txt"
