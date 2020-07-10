@@ -1,0 +1,8 @@
+configuret erminal
+!
+vrf definition {{ route_targets.vrf }}
+ address-family ipv4
+  route-target export {{ route_targets.rt_export }}
+  route-target import {{ route_targets.rt_import }}
+!
+write

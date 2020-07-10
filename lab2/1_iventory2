@@ -1,0 +1,13 @@
+[csr]
+10.241.176.139
+
+[csr:vars]
+ansible_python_interpreter = "/usr/bin/env python"
+
+ansible_user=ATT9047833
+ansible_pass=M3x#4Tt.20i9Fa
+
+#[persistent_connection]
+#connect_timeout = 100
+#command_timeout = 80
+

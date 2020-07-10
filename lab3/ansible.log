@@ -1,0 +1,974 @@
+2020-07-03 18:49:52,851 p=1496 u=alejandro n=ansible |   1496 1593820192.85103: starting run
+2020-07-03 18:49:53,139 p=1496 u=alejandro n=ansible | ansible-playbook 2.9.10
+  config file = None
+  configured module search path = [u'/home/alejandro/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible
+  executable location = /home/alejandro/an02/py2-venv/bin/ansible-playbook
+  python version = 2.7.17 (default, Apr 15 2020, 17:20:14) [GCC 7.5.0]
+2020-07-03 18:49:53,140 p=1496 u=alejandro n=ansible | No config file found; using defaults
+2020-07-03 18:49:53,142 p=1496 u=alejandro n=ansible |   1496 1593820193.14277: Added group all to inventory
+2020-07-03 18:49:53,143 p=1496 u=alejandro n=ansible |   1496 1593820193.14333: Added group ungrouped to inventory
+2020-07-03 18:49:53,144 p=1496 u=alejandro n=ansible |   1496 1593820193.14395: Group all now contains ungrouped
+2020-07-03 18:49:53,144 p=1496 u=alejandro n=ansible |   1496 1593820193.14455: Examining possible inventory source: /home/alejandro/an02/lab2/1_iventory2
+2020-07-03 18:49:53,152 p=1496 u=alejandro n=ansible |   1496 1593820193.15234: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/cache
+2020-07-03 18:49:53,155 p=1496 u=alejandro n=ansible |   1496 1593820193.15496: Loading CacheModule 'memory' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/cache/memory.py
+2020-07-03 18:49:53,165 p=1496 u=alejandro n=ansible |   1496 1593820193.16519: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/inventory
+2020-07-03 18:49:53,169 p=1496 u=alejandro n=ansible |   1496 1593820193.16927: Loading InventoryModule 'host_list' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/inventory/host_list.py
+2020-07-03 18:49:53,174 p=1496 u=alejandro n=ansible |   1496 1593820193.17457: Loaded config def from plugin (inventory/script)
+2020-07-03 18:49:53,175 p=1496 u=alejandro n=ansible |   1496 1593820193.17520: Loading InventoryModule 'script' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/inventory/script.py
+2020-07-03 18:49:53,178 p=1496 u=alejandro n=ansible |   1496 1593820193.17768: Loading InventoryModule 'auto' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/inventory/auto.py
+2020-07-03 18:49:53,184 p=1496 u=alejandro n=ansible |   1496 1593820193.18358: Loaded config def from plugin (inventory/yaml)
+2020-07-03 18:49:53,184 p=1496 u=alejandro n=ansible |   1496 1593820193.18467: Loading InventoryModule 'yaml' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/inventory/yaml.py
+2020-07-03 18:49:53,190 p=1496 u=alejandro n=ansible |   1496 1593820193.19041: Loading InventoryModule 'ini' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/inventory/ini.py
+2020-07-03 18:49:53,193 p=1496 u=alejandro n=ansible |   1496 1593820193.19292: Loading InventoryModule 'toml' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/inventory/toml.py
+2020-07-03 18:49:53,193 p=1496 u=alejandro n=ansible |   1496 1593820193.19365: Attempting to use plugin host_list (/home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/inventory/host_list.py)
+2020-07-03 18:49:53,197 p=1496 u=alejandro n=ansible | host_list declined parsing /home/alejandro/an02/lab2/1_iventory2 as it did not pass its verify_file() method
+2020-07-03 18:49:53,197 p=1496 u=alejandro n=ansible |   1496 1593820193.19768: Attempting to use plugin script (/home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/inventory/script.py)
+2020-07-03 18:49:53,198 p=1496 u=alejandro n=ansible | script declined parsing /home/alejandro/an02/lab2/1_iventory2 as it did not pass its verify_file() method
+2020-07-03 18:49:53,199 p=1496 u=alejandro n=ansible |   1496 1593820193.19904: Attempting to use plugin auto (/home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/inventory/auto.py)
+2020-07-03 18:49:53,200 p=1496 u=alejandro n=ansible | auto declined parsing /home/alejandro/an02/lab2/1_iventory2 as it did not pass its verify_file() method
+2020-07-03 18:49:53,201 p=1496 u=alejandro n=ansible |   1496 1593820193.20103: Attempting to use plugin yaml (/home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/inventory/yaml.py)
+2020-07-03 18:49:53,205 p=1496 u=alejandro n=ansible |   1496 1593820193.20273: Loading data from /home/alejandro/an02/lab2/1_iventory2
+2020-07-03 18:49:53,207 p=1496 u=alejandro n=ansible |   1496 1593820193.20739: /home/alejandro/an02/lab2/1_iventory2 was not parsable by yaml
+2020-07-03 18:49:53,208 p=1496 u=alejandro n=ansible |   1496 1593820193.20867: Attempting to use plugin ini (/home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/inventory/ini.py)
+2020-07-03 18:49:53,211 p=1496 u=alejandro n=ansible |   1496 1593820193.21059: Added group csr to inventory
+2020-07-03 18:49:53,212 p=1496 u=alejandro n=ansible |   1496 1593820193.21225: set inventory_file for 10.241.176.139
+2020-07-03 18:49:53,215 p=1496 u=alejandro n=ansible |   1496 1593820193.21304: set inventory_dir for 10.241.176.139
+2020-07-03 18:49:53,216 p=1496 u=alejandro n=ansible |   1496 1593820193.21605: Added host 10.241.176.139 to inventory
+2020-07-03 18:49:53,217 p=1496 u=alejandro n=ansible |   1496 1593820193.21681: Added host 10.241.176.139 to group csr
+2020-07-03 18:49:53,218 p=1496 u=alejandro n=ansible |   1496 1593820193.21780: set ansible_python_interpreter for csr
+2020-07-03 18:49:53,218 p=1496 u=alejandro n=ansible |   1496 1593820193.21847: set ansible_user for csr
+2020-07-03 18:49:53,219 p=1496 u=alejandro n=ansible |   1496 1593820193.21915: set ansible_pass for csr
+2020-07-03 18:49:53,221 p=1496 u=alejandro n=ansible | Parsed /home/alejandro/an02/lab2/1_iventory2 inventory source with ini plugin
+2020-07-03 18:49:53,224 p=1496 u=alejandro n=ansible |   1496 1593820193.22169: Reconcile groups and hosts in inventory.
+2020-07-03 18:49:53,225 p=1496 u=alejandro n=ansible |   1496 1593820193.22476: Group all now contains csr
+2020-07-03 18:49:53,225 p=1496 u=alejandro n=ansible |   1496 1593820193.22552: Loading CacheModule 'memory' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/cache/memory.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:53,281 p=1496 u=alejandro n=ansible |   1496 1593820193.28132: Loaded config def from plugin (connection/buildah)
+2020-07-03 18:49:53,283 p=1496 u=alejandro n=ansible |   1496 1593820193.28240: Loading Connection 'buildah' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/buildah.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,289 p=1496 u=alejandro n=ansible |   1496 1593820193.28905: Loaded config def from plugin (connection/chroot)
+2020-07-03 18:49:53,290 p=1496 u=alejandro n=ansible |   1496 1593820193.28965: Loading Connection 'chroot' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/chroot.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,303 p=1496 u=alejandro n=ansible |   1496 1593820193.30315: Loaded config def from plugin (connection/docker)
+2020-07-03 18:49:53,304 p=1496 u=alejandro n=ansible |   1496 1593820193.30380: Loading Connection 'docker' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/docker.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,307 p=1496 u=alejandro n=ansible |   1496 1593820193.30760: Loaded config def from plugin (connection/funcd)
+2020-07-03 18:49:53,349 p=1496 u=alejandro n=ansible |   1496 1593820193.34906: Loaded config def from plugin (connection/httpapi)
+2020-07-03 18:49:53,350 p=1496 u=alejandro n=ansible |   1496 1593820193.35001: Loading Connection 'httpapi' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/httpapi.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,354 p=1496 u=alejandro n=ansible |   1496 1593820193.35463: Loaded config def from plugin (connection/iocage)
+2020-07-03 18:49:53,356 p=1496 u=alejandro n=ansible |   1496 1593820193.35529: Loading Connection 'iocage' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/iocage.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,359 p=1496 u=alejandro n=ansible |   1496 1593820193.35898: Loaded config def from plugin (connection/jail)
+2020-07-03 18:49:53,362 p=1496 u=alejandro n=ansible |   1496 1593820193.35958: Loading Connection 'jail' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/jail.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,382 p=1496 u=alejandro n=ansible |   1496 1593820193.38191: Loaded config def from plugin (connection/kubectl)
+2020-07-03 18:49:53,387 p=1496 u=alejandro n=ansible |   1496 1593820193.38286: Loading Connection 'kubectl' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/kubectl.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,391 p=1496 u=alejandro n=ansible |   1496 1593820193.39105: Loaded config def from plugin (connection/libvirt_lxc)
+2020-07-03 18:49:53,395 p=1496 u=alejandro n=ansible |   1496 1593820193.39176: Loading Connection 'libvirt_lxc' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/libvirt_lxc.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,398 p=1496 u=alejandro n=ansible |   1496 1593820193.39736: Loading Connection 'local' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/local.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,404 p=1496 u=alejandro n=ansible |   1496 1593820193.40394: Loaded config def from plugin (connection/lxc)
+2020-07-03 18:49:53,405 p=1496 u=alejandro n=ansible |   1496 1593820193.40459: Loading Connection 'lxc' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/lxc.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,409 p=1496 u=alejandro n=ansible |   1496 1593820193.40887: Loaded config def from plugin (connection/lxd)
+2020-07-03 18:49:53,410 p=1496 u=alejandro n=ansible |   1496 1593820193.40954: Loading Connection 'lxd' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/lxd.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,426 p=1496 u=alejandro n=ansible |   1496 1593820193.42633: Loaded config def from plugin (connection/napalm)
+2020-07-03 18:49:53,430 p=1496 u=alejandro n=ansible |   1496 1593820193.42703: Loading Connection 'napalm' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/napalm.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,453 p=1496 u=alejandro n=ansible |   1496 1593820193.45328: Loaded config def from plugin (connection/netconf)
+2020-07-03 18:49:53,454 p=1496 u=alejandro n=ansible |   1496 1593820193.45415: Loading Connection 'netconf' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/netconf.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,493 p=1496 u=alejandro n=ansible |   1496 1593820193.49257: Loaded config def from plugin (connection/network_cli)
+2020-07-03 18:49:53,494 p=1496 u=alejandro n=ansible |   1496 1593820193.49343: Loading Connection 'network_cli' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/network_cli.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,510 p=1496 u=alejandro n=ansible |   1496 1593820193.50985: Loaded config def from plugin (connection/oc)
+2020-07-03 18:49:53,511 p=1496 u=alejandro n=ansible |   1496 1593820193.51049: Loading Connection 'oc' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/oc.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,529 p=1496 u=alejandro n=ansible |   1496 1593820193.52940: Loaded config def from plugin (connection/paramiko_ssh)
+2020-07-03 18:49:53,530 p=1496 u=alejandro n=ansible |   1496 1593820193.53029: Loading Connection 'paramiko_ssh' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/paramiko_ssh.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,717 p=1496 u=alejandro n=ansible |   1496 1593820193.71677: Loaded config def from plugin (connection/persistent)
+2020-07-03 18:49:53,718 p=1496 u=alejandro n=ansible |   1496 1593820193.71792: Loading Connection 'persistent' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/persistent.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,722 p=1496 u=alejandro n=ansible |   1496 1593820193.72240: Loaded config def from plugin (connection/podman)
+2020-07-03 18:49:53,723 p=1496 u=alejandro n=ansible |   1496 1593820193.72313: Loading Connection 'podman' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/podman.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,770 p=1496 u=alejandro n=ansible |   1496 1593820193.76986: Loaded config def from plugin (connection/psrp)
+2020-07-03 18:49:53,771 p=1496 u=alejandro n=ansible |   1496 1593820193.77077: Loading Connection 'psrp' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/psrp.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,775 p=1496 u=alejandro n=ansible |   1496 1593820193.77549: Loaded config def from plugin (connection/qubes)
+2020-07-03 18:49:53,776 p=1496 u=alejandro n=ansible |   1496 1593820193.77614: Loading Connection 'qubes' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/qubes.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,779 p=1496 u=alejandro n=ansible |   1496 1593820193.77891: Loading Connection 'saltstack' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/saltstack.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,819 p=1496 u=alejandro n=ansible |   1496 1593820193.81915: Loaded config def from plugin (connection/ssh)
+2020-07-03 18:49:53,820 p=1496 u=alejandro n=ansible |   1496 1593820193.81994: Loading Connection 'ssh' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/ssh.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,837 p=1496 u=alejandro n=ansible |   1496 1593820193.83759: Loaded config def from plugin (connection/vmware_tools)
+2020-07-03 18:49:53,839 p=1496 u=alejandro n=ansible |   1496 1593820193.83838: Loading Connection 'vmware_tools' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/vmware_tools.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,854 p=1496 u=alejandro n=ansible |   1496 1593820193.85452: Loaded config def from plugin (connection/winrm)
+2020-07-03 18:49:53,856 p=1496 u=alejandro n=ansible |   1496 1593820193.85526: Loading Connection 'winrm' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/winrm.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,859 p=1496 u=alejandro n=ansible |   1496 1593820193.85920: Loaded config def from plugin (connection/zone)
+2020-07-03 18:49:53,860 p=1496 u=alejandro n=ansible |   1496 1593820193.86030: Loading Connection 'zone' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/zone.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,869 p=1496 u=alejandro n=ansible |   1496 1593820193.86872: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/doc_fragments
+2020-07-03 18:49:53,874 p=1496 u=alejandro n=ansible |   1496 1593820193.87343: Loading ModuleDocFragment 'shell_windows' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/doc_fragments/shell_windows.py
+2020-07-03 18:49:53,878 p=1496 u=alejandro n=ansible |   1496 1593820193.87848: Loaded config def from plugin (shell/cmd)
+2020-07-03 18:49:53,879 p=1496 u=alejandro n=ansible |   1496 1593820193.87918: Loading ShellModule 'cmd' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell/cmd.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,886 p=1496 u=alejandro n=ansible |   1496 1593820193.88212: Loading ModuleDocFragment 'shell_common' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/doc_fragments/shell_common.py
+2020-07-03 18:49:53,893 p=1496 u=alejandro n=ansible |   1496 1593820193.89361: Loaded config def from plugin (shell/csh)
+2020-07-03 18:49:53,895 p=1496 u=alejandro n=ansible |   1496 1593820193.89430: Loading ShellModule 'csh' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell/csh.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,899 p=1496 u=alejandro n=ansible |   1496 1593820193.89812: Loading ModuleDocFragment 'shell_common' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/doc_fragments/shell_common.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:53,907 p=1496 u=alejandro n=ansible |   1496 1593820193.90725: Loaded config def from plugin (shell/fish)
+2020-07-03 18:49:53,911 p=1496 u=alejandro n=ansible |   1496 1593820193.90791: Loading ShellModule 'fish' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell/fish.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,913 p=1496 u=alejandro n=ansible |   1496 1593820193.91304: Loading ModuleDocFragment 'shell_windows' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/doc_fragments/shell_windows.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:53,919 p=1496 u=alejandro n=ansible |   1496 1593820193.91931: Loaded config def from plugin (shell/powershell)
+2020-07-03 18:49:53,920 p=1496 u=alejandro n=ansible |   1496 1593820193.92000: Loading ShellModule 'powershell' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell/powershell.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,925 p=1496 u=alejandro n=ansible |   1496 1593820193.92242: Loading ModuleDocFragment 'shell_common' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/doc_fragments/shell_common.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:53,933 p=1496 u=alejandro n=ansible |   1496 1593820193.93303: Loaded config def from plugin (shell/sh)
+2020-07-03 18:49:53,937 p=1496 u=alejandro n=ansible |   1496 1593820193.93374: Loading ShellModule 'sh' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,953 p=1496 u=alejandro n=ansible |   1496 1593820193.95272: Loaded config def from plugin (become/doas)
+2020-07-03 18:49:53,954 p=1496 u=alejandro n=ansible |   1496 1593820193.95374: Loading BecomeModule 'doas' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/become/doas.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,963 p=1496 u=alejandro n=ansible |   1496 1593820193.96330: Loaded config def from plugin (become/dzdo)
+2020-07-03 18:49:53,968 p=1496 u=alejandro n=ansible |   1496 1593820193.96398: Loading BecomeModule 'dzdo' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/become/dzdo.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,972 p=1496 u=alejandro n=ansible |   1496 1593820193.97221: Loaded config def from plugin (become/enable)
+2020-07-03 18:49:53,976 p=1496 u=alejandro n=ansible |   1496 1593820193.97289: Loading BecomeModule 'enable' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/become/enable.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,988 p=1496 u=alejandro n=ansible |   1496 1593820193.98854: Loaded config def from plugin (become/ksu)
+2020-07-03 18:49:53,990 p=1496 u=alejandro n=ansible |   1496 1593820193.98932: Loading BecomeModule 'ksu' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/become/ksu.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:53,999 p=1496 u=alejandro n=ansible |   1496 1593820193.99889: Loaded config def from plugin (become/machinectl)
+2020-07-03 18:49:54,003 p=1496 u=alejandro n=ansible |   1496 1593820193.99956: Loading BecomeModule 'machinectl' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/become/machinectl.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,015 p=1496 u=alejandro n=ansible |   1496 1593820194.01504: Loaded config def from plugin (become/pbrun)
+2020-07-03 18:49:54,020 p=1496 u=alejandro n=ansible |   1496 1593820194.01585: Loading BecomeModule 'pbrun' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/become/pbrun.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,031 p=1496 u=alejandro n=ansible |   1496 1593820194.03124: Loaded config def from plugin (become/pfexec)
+2020-07-03 18:49:54,032 p=1496 u=alejandro n=ansible |   1496 1593820194.03187: Loading BecomeModule 'pfexec' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/become/pfexec.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,040 p=1496 u=alejandro n=ansible |   1496 1593820194.04064: Loaded config def from plugin (become/pmrun)
+2020-07-03 18:49:54,044 p=1496 u=alejandro n=ansible |   1496 1593820194.04132: Loading BecomeModule 'pmrun' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/become/pmrun.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,054 p=1496 u=alejandro n=ansible |   1496 1593820194.05376: Loaded config def from plugin (become/runas)
+2020-07-03 18:49:54,055 p=1496 u=alejandro n=ansible |   1496 1593820194.05446: Loading BecomeModule 'runas' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/become/runas.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,065 p=1496 u=alejandro n=ansible |   1496 1593820194.06483: Loaded config def from plugin (become/sesu)
+2020-07-03 18:49:54,069 p=1496 u=alejandro n=ansible |   1496 1593820194.06550: Loading BecomeModule 'sesu' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/become/sesu.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,080 p=1496 u=alejandro n=ansible |   1496 1593820194.08066: Loaded config def from plugin (become/su)
+2020-07-03 18:49:54,089 p=1496 u=alejandro n=ansible |   1496 1593820194.08131: Loading BecomeModule 'su' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/become/su.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,099 p=1496 u=alejandro n=ansible |   1496 1593820194.09883: Loaded config def from plugin (become/sudo)
+2020-07-03 18:49:54,107 p=1496 u=alejandro n=ansible |   1496 1593820194.09951: Loading BecomeModule 'sudo' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/become/sudo.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,109 p=1496 u=alejandro n=ansible |   1496 1593820194.10844: Loading data from /home/alejandro/an02/lab2/playbook-example.yml
+2020-07-03 18:49:54,126 p=1496 u=alejandro n=ansible |   1496 1593820194.12611: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/action
+2020-07-03 18:49:54,278 p=1496 u=alejandro n=ansible |   1496 1593820194.27855: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules
+2020-07-03 18:49:54,280 p=1496 u=alejandro n=ansible |   1496 1593820194.27976: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud
+2020-07-03 18:49:54,281 p=1496 u=alejandro n=ansible |   1496 1593820194.28110: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/clustering
+2020-07-03 18:49:54,282 p=1496 u=alejandro n=ansible |   1496 1593820194.28224: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/commands
+2020-07-03 18:49:54,283 p=1496 u=alejandro n=ansible |   1496 1593820194.28352: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/crypto
+2020-07-03 18:49:54,285 p=1496 u=alejandro n=ansible |   1496 1593820194.28501: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/database
+2020-07-03 18:49:54,286 p=1496 u=alejandro n=ansible |   1496 1593820194.28607: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/files
+2020-07-03 18:49:54,288 p=1496 u=alejandro n=ansible |   1496 1593820194.28756: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/identity
+2020-07-03 18:49:54,292 p=1496 u=alejandro n=ansible |   1496 1593820194.28935: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/inventory
+2020-07-03 18:49:54,292 p=1496 u=alejandro n=ansible |   1496 1593820194.29268: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/messaging
+2020-07-03 18:49:54,293 p=1496 u=alejandro n=ansible |   1496 1593820194.29354: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/monitoring
+2020-07-03 18:49:54,295 p=1496 u=alejandro n=ansible |   1496 1593820194.29538: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/net_tools
+2020-07-03 18:49:54,297 p=1496 u=alejandro n=ansible |   1496 1593820194.29678: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network
+2020-07-03 18:49:54,302 p=1496 u=alejandro n=ansible |   1496 1593820194.29928: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/notification
+2020-07-03 18:49:54,304 p=1496 u=alejandro n=ansible |   1496 1593820194.30391: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/packaging
+2020-07-03 18:49:54,305 p=1496 u=alejandro n=ansible |   1496 1593820194.30484: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/remote_management
+2020-07-03 18:49:54,307 p=1496 u=alejandro n=ansible |   1496 1593820194.30587: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/source_control
+2020-07-03 18:49:54,308 p=1496 u=alejandro n=ansible |   1496 1593820194.30831: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/storage
+2020-07-03 18:49:54,310 p=1496 u=alejandro n=ansible |   1496 1593820194.30938: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/system
+2020-07-03 18:49:54,313 p=1496 u=alejandro n=ansible |   1496 1593820194.31361: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/utilities
+2020-07-03 18:49:54,314 p=1496 u=alejandro n=ansible |   1496 1593820194.31452: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/web_infrastructure
+2020-07-03 18:49:54,319 p=1496 u=alejandro n=ansible |   1496 1593820194.31638: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/alicloud
+2020-07-03 18:49:54,320 p=1496 u=alejandro n=ansible |   1496 1593820194.32066: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/amazon
+2020-07-03 18:49:54,329 p=1496 u=alejandro n=ansible |   1496 1593820194.32906: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/atomic
+2020-07-03 18:49:54,330 p=1496 u=alejandro n=ansible |   1496 1593820194.33012: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/azure
+2020-07-03 18:49:54,340 p=1496 u=alejandro n=ansible |   1496 1593820194.33968: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/centurylink
+2020-07-03 18:49:54,341 p=1496 u=alejandro n=ansible |   1496 1593820194.34089: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/cloudscale
+2020-07-03 18:49:54,344 p=1496 u=alejandro n=ansible |   1496 1593820194.34199: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/cloudstack
+2020-07-03 18:49:54,346 p=1496 u=alejandro n=ansible |   1496 1593820194.34641: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/digital_ocean
+2020-07-03 18:49:54,348 p=1496 u=alejandro n=ansible |   1496 1593820194.34842: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/dimensiondata
+2020-07-03 18:49:54,350 p=1496 u=alejandro n=ansible |   1496 1593820194.34947: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/docker
+2020-07-03 18:49:54,352 p=1496 u=alejandro n=ansible |   1496 1593820194.35228: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/google
+2020-07-03 18:49:54,359 p=1496 u=alejandro n=ansible |   1496 1593820194.35943: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/hcloud
+2020-07-03 18:49:54,361 p=1496 u=alejandro n=ansible |   1496 1593820194.36109: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/heroku
+2020-07-03 18:49:54,364 p=1496 u=alejandro n=ansible |   1496 1593820194.36213: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/huawei
+2020-07-03 18:49:54,365 p=1496 u=alejandro n=ansible |   1496 1593820194.36509: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/kubevirt
+2020-07-03 18:49:54,369 p=1496 u=alejandro n=ansible |   1496 1593820194.36614: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/linode
+2020-07-03 18:49:54,370 p=1496 u=alejandro n=ansible |   1496 1593820194.37006: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/lxc
+2020-07-03 18:49:54,371 p=1496 u=alejandro n=ansible |   1496 1593820194.37097: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/lxd
+2020-07-03 18:49:54,372 p=1496 u=alejandro n=ansible |   1496 1593820194.37195: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/memset
+2020-07-03 18:49:54,374 p=1496 u=alejandro n=ansible |   1496 1593820194.37319: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/misc
+2020-07-03 18:49:54,377 p=1496 u=alejandro n=ansible |   1496 1593820194.37515: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/oneandone
+2020-07-03 18:49:54,378 p=1496 u=alejandro n=ansible |   1496 1593820194.37819: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/online
+2020-07-03 18:49:54,379 p=1496 u=alejandro n=ansible |   1496 1593820194.37916: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/opennebula
+2020-07-03 18:49:54,380 p=1496 u=alejandro n=ansible |   1496 1593820194.38017: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/openstack
+2020-07-03 18:49:54,386 p=1496 u=alejandro n=ansible |   1496 1593820194.38367: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/oracle
+2020-07-03 18:49:54,387 p=1496 u=alejandro n=ansible |   1496 1593820194.38726: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/ovh
+2020-07-03 18:49:54,388 p=1496 u=alejandro n=ansible |   1496 1593820194.38825: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/ovirt
+2020-07-03 18:49:54,391 p=1496 u=alejandro n=ansible |   1496 1593820194.39143: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/packet
+2020-07-03 18:49:54,392 p=1496 u=alejandro n=ansible |   1496 1593820194.39238: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/podman
+2020-07-03 18:49:54,393 p=1496 u=alejandro n=ansible |   1496 1593820194.39330: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/profitbricks
+2020-07-03 18:49:54,394 p=1496 u=alejandro n=ansible |   1496 1593820194.39432: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/pubnub
+2020-07-03 18:49:54,396 p=1496 u=alejandro n=ansible |   1496 1593820194.39522: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/rackspace
+2020-07-03 18:49:54,399 p=1496 u=alejandro n=ansible |   1496 1593820194.39788: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/scaleway
+2020-07-03 18:49:54,401 p=1496 u=alejandro n=ansible |   1496 1593820194.40133: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/smartos
+2020-07-03 18:49:54,402 p=1496 u=alejandro n=ansible |   1496 1593820194.40236: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/softlayer
+2020-07-03 18:49:54,403 p=1496 u=alejandro n=ansible |   1496 1593820194.40320: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/spotinst
+2020-07-03 18:49:54,404 p=1496 u=alejandro n=ansible |   1496 1593820194.40411: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/univention
+2020-07-03 18:49:54,406 p=1496 u=alejandro n=ansible |   1496 1593820194.40529: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/vmware
+2020-07-03 18:49:54,412 p=1496 u=alejandro n=ansible |   1496 1593820194.41174: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/vultr
+2020-07-03 18:49:54,414 p=1496 u=alejandro n=ansible |   1496 1593820194.41386: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/webfaction
+2020-07-03 18:49:54,415 p=1496 u=alejandro n=ansible |   1496 1593820194.41488: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/cloud/xenserver
+2020-07-03 18:49:54,416 p=1496 u=alejandro n=ansible |   1496 1593820194.41645: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/clustering/k8s
+2020-07-03 18:49:54,420 p=1496 u=alejandro n=ansible |   1496 1593820194.41766: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/clustering/openshift
+2020-07-03 18:49:54,421 p=1496 u=alejandro n=ansible |   1496 1593820194.42104: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/crypto/acme
+2020-07-03 18:49:54,422 p=1496 u=alejandro n=ansible |   1496 1593820194.42208: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/crypto/entrust
+2020-07-03 18:49:54,423 p=1496 u=alejandro n=ansible |   1496 1593820194.42288: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/database/aerospike
+2020-07-03 18:49:54,425 p=1496 u=alejandro n=ansible |   1496 1593820194.42372: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/database/influxdb
+2020-07-03 18:49:54,428 p=1496 u=alejandro n=ansible |   1496 1593820194.42576: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/database/misc
+2020-07-03 18:49:54,429 p=1496 u=alejandro n=ansible |   1496 1593820194.42915: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/database/mongodb
+2020-07-03 18:49:54,430 p=1496 u=alejandro n=ansible |   1496 1593820194.43020: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/database/mssql
+2020-07-03 18:49:54,431 p=1496 u=alejandro n=ansible |   1496 1593820194.43112: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/database/mysql
+2020-07-03 18:49:54,432 p=1496 u=alejandro n=ansible |   1496 1593820194.43216: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/database/postgresql
+2020-07-03 18:49:54,434 p=1496 u=alejandro n=ansible |   1496 1593820194.43435: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/database/proxysql
+2020-07-03 18:49:54,437 p=1496 u=alejandro n=ansible |   1496 1593820194.43555: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/database/vertica
+2020-07-03 18:49:54,438 p=1496 u=alejandro n=ansible |   1496 1593820194.43868: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/identity/cyberark
+2020-07-03 18:49:54,439 p=1496 u=alejandro n=ansible |   1496 1593820194.43969: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/identity/ipa
+2020-07-03 18:49:54,441 p=1496 u=alejandro n=ansible |   1496 1593820194.44116: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/identity/keycloak
+2020-07-03 18:49:54,443 p=1496 u=alejandro n=ansible |   1496 1593820194.44218: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/identity/opendj
+2020-07-03 18:49:54,446 p=1496 u=alejandro n=ansible |   1496 1593820194.44404: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/messaging/rabbitmq
+2020-07-03 18:49:54,448 p=1496 u=alejandro n=ansible |   1496 1593820194.44777: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/monitoring/zabbix
+2020-07-03 18:49:54,449 p=1496 u=alejandro n=ansible |   1496 1593820194.44902: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/net_tools/basics
+2020-07-03 18:49:54,450 p=1496 u=alejandro n=ansible |   1496 1593820194.45005: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/net_tools/exoscale
+2020-07-03 18:49:54,452 p=1496 u=alejandro n=ansible |   1496 1593820194.45123: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/net_tools/infinity
+2020-07-03 18:49:54,455 p=1496 u=alejandro n=ansible |   1496 1593820194.45299: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/net_tools/ldap
+2020-07-03 18:49:54,456 p=1496 u=alejandro n=ansible |   1496 1593820194.45643: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/net_tools/netbox
+2020-07-03 18:49:54,457 p=1496 u=alejandro n=ansible |   1496 1593820194.45737: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/net_tools/nios
+2020-07-03 18:49:54,458 p=1496 u=alejandro n=ansible |   1496 1593820194.45864: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/a10
+2020-07-03 18:49:54,459 p=1496 u=alejandro n=ansible |   1496 1593820194.45958: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/aci
+2020-07-03 18:49:54,464 p=1496 u=alejandro n=ansible |   1496 1593820194.46386: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/aireos
+2020-07-03 18:49:54,465 p=1496 u=alejandro n=ansible |   1496 1593820194.46483: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/aos
+2020-07-03 18:49:54,466 p=1496 u=alejandro n=ansible |   1496 1593820194.46606: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/aruba
+2020-07-03 18:49:54,467 p=1496 u=alejandro n=ansible |   1496 1593820194.46696: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/asa
+2020-07-03 18:49:54,468 p=1496 u=alejandro n=ansible |   1496 1593820194.46822: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/avi
+2020-07-03 18:49:54,471 p=1496 u=alejandro n=ansible |   1496 1593820194.47107: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/bigswitch
+2020-07-03 18:49:54,474 p=1496 u=alejandro n=ansible |   1496 1593820194.47208: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/check_point
+2020-07-03 18:49:54,478 p=1496 u=alejandro n=ansible |   1496 1593820194.47808: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/citrix
+2020-07-03 18:49:54,479 p=1496 u=alejandro n=ansible |   1496 1593820194.47890: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/cli
+2020-07-03 18:49:54,480 p=1496 u=alejandro n=ansible |   1496 1593820194.47977: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/cloudengine
+2020-07-03 18:49:54,484 p=1496 u=alejandro n=ansible |   1496 1593820194.48359: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/cloudvision
+2020-07-03 18:49:54,485 p=1496 u=alejandro n=ansible |   1496 1593820194.48512: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/cnos
+2020-07-03 18:49:54,487 p=1496 u=alejandro n=ansible |   1496 1593820194.48680: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/cumulus
+2020-07-03 18:49:54,488 p=1496 u=alejandro n=ansible |   1496 1593820194.48801: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/dellos10
+2020-07-03 18:49:54,489 p=1496 u=alejandro n=ansible |   1496 1593820194.48890: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/dellos6
+2020-07-03 18:49:54,493 p=1496 u=alejandro n=ansible |   1496 1593820194.49051: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/dellos9
+2020-07-03 18:49:54,494 p=1496 u=alejandro n=ansible |   1496 1593820194.49389: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/edgeos
+2020-07-03 18:49:54,495 p=1496 u=alejandro n=ansible |   1496 1593820194.49492: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/edgeswitch
+2020-07-03 18:49:54,496 p=1496 u=alejandro n=ansible |   1496 1593820194.49591: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/enos
+2020-07-03 18:49:54,497 p=1496 u=alejandro n=ansible |   1496 1593820194.49692: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/eos
+2020-07-03 18:49:54,499 p=1496 u=alejandro n=ansible |   1496 1593820194.49865: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/eric_eccli
+2020-07-03 18:49:54,503 p=1496 u=alejandro n=ansible |   1496 1593820194.50010: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/exos
+2020-07-03 18:49:54,504 p=1496 u=alejandro n=ansible |   1496 1593820194.50423: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/f5
+2020-07-03 18:49:54,510 p=1496 u=alejandro n=ansible |   1496 1593820194.51013: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/files
+2020-07-03 18:49:54,511 p=1496 u=alejandro n=ansible |   1496 1593820194.51101: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/fortianalyzer
+2020-07-03 18:49:54,514 p=1496 u=alejandro n=ansible |   1496 1593820194.51189: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/fortimanager
+2020-07-03 18:49:54,515 p=1496 u=alejandro n=ansible |   1496 1593820194.51576: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/fortios
+2020-07-03 18:49:54,532 p=1496 u=alejandro n=ansible |   1496 1593820194.53164: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/frr
+2020-07-03 18:49:54,532 p=1496 u=alejandro n=ansible |   1496 1593820194.53266: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/ftd
+2020-07-03 18:49:54,536 p=1496 u=alejandro n=ansible |   1496 1593820194.53376: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/icx
+2020-07-03 18:49:54,538 p=1496 u=alejandro n=ansible |   1496 1593820194.53801: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/illumos
+2020-07-03 18:49:54,539 p=1496 u=alejandro n=ansible |   1496 1593820194.53918: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/ingate
+2020-07-03 18:49:54,541 p=1496 u=alejandro n=ansible |   1496 1593820194.54005: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/interface
+2020-07-03 18:49:54,544 p=1496 u=alejandro n=ansible |   1496 1593820194.54187: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/ios
+2020-07-03 18:49:54,551 p=1496 u=alejandro n=ansible |   1496 1593820194.55148: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback
+2020-07-03 18:49:54,559 p=1496 u=alejandro n=ansible |   1496 1593820194.55840: Loading ModuleDocFragment 'default_callback' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/doc_fragments/default_callback.py
+2020-07-03 18:49:54,568 p=1496 u=alejandro n=ansible |   1496 1593820194.56838: Loaded config def from plugin (callback/default)
+2020-07-03 18:49:54,569 p=1496 u=alejandro n=ansible |   1496 1593820194.56899: Loading CallbackModule 'default' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/default.py
+2020-07-03 18:49:54,576 p=1496 u=alejandro n=ansible |   1496 1593820194.57610: Loading ModuleDocFragment 'default_callback' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/doc_fragments/default_callback.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:54,586 p=1496 u=alejandro n=ansible |   1496 1593820194.58578: Loaded config def from plugin (callback/actionable)
+2020-07-03 18:49:54,587 p=1496 u=alejandro n=ansible |   1496 1593820194.58687: Loading CallbackModule 'actionable' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/actionable.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,591 p=1496 u=alejandro n=ansible |   1496 1593820194.59009: Loading CallbackModule 'aws_resource_actions' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/aws_resource_actions.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,596 p=1496 u=alejandro n=ansible |   1496 1593820194.59668: Loaded config def from plugin (callback/cgroup_memory_recap)
+2020-07-03 18:49:54,601 p=1496 u=alejandro n=ansible |   1496 1593820194.59728: Loading CallbackModule 'cgroup_memory_recap' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/cgroup_memory_recap.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,620 p=1496 u=alejandro n=ansible |   1496 1593820194.62016: Loaded config def from plugin (callback/cgroup_perf_recap)
+2020-07-03 18:49:54,621 p=1496 u=alejandro n=ansible |   1496 1593820194.62096: Loading CallbackModule 'cgroup_perf_recap' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/cgroup_perf_recap.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,624 p=1496 u=alejandro n=ansible |   1496 1593820194.62365: Loading CallbackModule 'context_demo' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/context_demo.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,627 p=1496 u=alejandro n=ansible |   1496 1593820194.62696: Loading ModuleDocFragment 'default_callback' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/doc_fragments/default_callback.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:54,636 p=1496 u=alejandro n=ansible |   1496 1593820194.63662: Loaded config def from plugin (callback/counter_enabled)
+2020-07-03 18:49:54,637 p=1496 u=alejandro n=ansible |   1496 1593820194.63734: Loading CallbackModule 'counter_enabled' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/counter_enabled.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,640 p=1496 u=alejandro n=ansible |   1496 1593820194.64019: Loading ModuleDocFragment 'default_callback' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/doc_fragments/default_callback.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:54,649 p=1496 u=alejandro n=ansible |   1496 1593820194.64895: Loaded config def from plugin (callback/debug)
+2020-07-03 18:49:54,653 p=1496 u=alejandro n=ansible |   1496 1593820194.64961: Loading CallbackModule 'debug' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/debug.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,655 p=1496 u=alejandro n=ansible |   1496 1593820194.65442: Loading CallbackModule 'default' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/default.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,660 p=1496 u=alejandro n=ansible |   1496 1593820194.65817: Loading ModuleDocFragment 'default_callback' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/doc_fragments/default_callback.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:54,670 p=1496 u=alejandro n=ansible |   1496 1593820194.67052: Loaded config def from plugin (callback/dense)
+2020-07-03 18:49:54,671 p=1496 u=alejandro n=ansible |   1496 1593820194.67115: Loading CallbackModule 'dense' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/dense.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,680 p=1496 u=alejandro n=ansible |   1496 1593820194.67985: Loaded config def from plugin (callback/foreman)
+2020-07-03 18:49:54,684 p=1496 u=alejandro n=ansible |   1496 1593820194.68053: Loading CallbackModule 'foreman' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/foreman.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,688 p=1496 u=alejandro n=ansible |   1496 1593820194.68750: Loading ModuleDocFragment 'default_callback' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/doc_fragments/default_callback.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:54,697 p=1496 u=alejandro n=ansible |   1496 1593820194.69746: Loaded config def from plugin (callback/full_skip)
+2020-07-03 18:49:54,702 p=1496 u=alejandro n=ansible |   1496 1593820194.69809: Loading CallbackModule 'full_skip' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/full_skip.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,714 p=1496 u=alejandro n=ansible |   1496 1593820194.71445: Loaded config def from plugin (callback/grafana_annotations)
+2020-07-03 18:49:54,715 p=1496 u=alejandro n=ansible |   1496 1593820194.71527: Loading CallbackModule 'grafana_annotations' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/grafana_annotations.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,724 p=1496 u=alejandro n=ansible |   1496 1593820194.72418: Loaded config def from plugin (callback/hipchat)
+2020-07-03 18:49:54,725 p=1496 u=alejandro n=ansible |   1496 1593820194.72489: Loading CallbackModule 'hipchat' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/hipchat.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,730 p=1496 u=alejandro n=ansible |   1496 1593820194.73057: Loaded config def from plugin (callback/jabber)
+2020-07-03 18:49:54,731 p=1496 u=alejandro n=ansible |   1496 1593820194.73120: Loading CallbackModule 'jabber' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/jabber.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,737 p=1496 u=alejandro n=ansible |   1496 1593820194.73697: Loaded config def from plugin (callback/json)
+2020-07-03 18:49:54,738 p=1496 u=alejandro n=ansible |   1496 1593820194.73757: Loading CallbackModule 'json' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/json.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,748 p=1496 u=alejandro n=ansible |   1496 1593820194.74805: Loaded config def from plugin (callback/junit)
+2020-07-03 18:49:54,753 p=1496 u=alejandro n=ansible |   1496 1593820194.74871: Loading CallbackModule 'junit' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/junit.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,757 p=1496 u=alejandro n=ansible |   1496 1593820194.75752: Loaded config def from plugin (callback/log_plays)
+2020-07-03 18:49:54,761 p=1496 u=alejandro n=ansible |   1496 1593820194.75815: Loading CallbackModule 'log_plays' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/log_plays.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,771 p=1496 u=alejandro n=ansible |   1496 1593820194.77136: Loaded config def from plugin (callback/logdna)
+2020-07-03 18:49:54,773 p=1496 u=alejandro n=ansible |   1496 1593820194.77197: Loading CallbackModule 'logdna' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/logdna.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,783 p=1496 u=alejandro n=ansible |   1496 1593820194.78301: Loaded config def from plugin (callback/logentries)
+2020-07-03 18:49:54,786 p=1496 u=alejandro n=ansible |   1496 1593820194.78397: Loading CallbackModule 'logentries' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/logentries.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,792 p=1496 u=alejandro n=ansible |   1496 1593820194.79248: Loaded config def from plugin (callback/logstash)
+2020-07-03 18:49:54,796 p=1496 u=alejandro n=ansible |   1496 1593820194.79308: Loading CallbackModule 'logstash' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/logstash.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,806 p=1496 u=alejandro n=ansible |   1496 1593820194.80644: Loaded config def from plugin (callback/mail)
+2020-07-03 18:49:54,807 p=1496 u=alejandro n=ansible |   1496 1593820194.80709: Loading CallbackModule 'mail' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/mail.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,810 p=1496 u=alejandro n=ansible |   1496 1593820194.80974: Loading CallbackModule 'minimal' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/minimal.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,820 p=1496 u=alejandro n=ansible |   1496 1593820194.81983: Loaded config def from plugin (callback/nrdp)
+2020-07-03 18:49:54,823 p=1496 u=alejandro n=ansible |   1496 1593820194.82045: Loading CallbackModule 'nrdp' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/nrdp.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,826 p=1496 u=alejandro n=ansible |   1496 1593820194.82584: Loading CallbackModule 'null' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/null.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,831 p=1496 u=alejandro n=ansible |   1496 1593820194.82853: Loading CallbackModule 'oneline' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/oneline.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,835 p=1496 u=alejandro n=ansible |   1496 1593820194.83476: Loading CallbackModule 'osx_say' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/osx_say.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,838 p=1496 u=alejandro n=ansible |   1496 1593820194.83791: Loading CallbackModule 'profile_roles' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/profile_roles.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,844 p=1496 u=alejandro n=ansible |   1496 1593820194.84389: Loaded config def from plugin (callback/profile_tasks)
+2020-07-03 18:49:54,845 p=1496 u=alejandro n=ansible |   1496 1593820194.84449: Loading CallbackModule 'profile_tasks' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/profile_tasks.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,850 p=1496 u=alejandro n=ansible |   1496 1593820194.84858: Loading CallbackModule 'say' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/say.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,855 p=1496 u=alejandro n=ansible |   1496 1593820194.85554: Loaded config def from plugin (callback/selective)
+2020-07-03 18:49:54,859 p=1496 u=alejandro n=ansible |   1496 1593820194.85617: Loading CallbackModule 'selective' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/selective.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,862 p=1496 u=alejandro n=ansible |   1496 1593820194.86231: Loading ModuleDocFragment 'default_callback' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/doc_fragments/default_callback.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:54,872 p=1496 u=alejandro n=ansible |   1496 1593820194.87235: Loaded config def from plugin (callback/skippy)
+2020-07-03 18:49:54,873 p=1496 u=alejandro n=ansible |   1496 1593820194.87301: Loading CallbackModule 'skippy' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/skippy.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,880 p=1496 u=alejandro n=ansible |   1496 1593820194.88018: Loaded config def from plugin (callback/slack)
+2020-07-03 18:49:54,885 p=1496 u=alejandro n=ansible |   1496 1593820194.88080: Loading CallbackModule 'slack' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/slack.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,890 p=1496 u=alejandro n=ansible |   1496 1593820194.89065: Loaded config def from plugin (callback/splunk)
+2020-07-03 18:49:54,892 p=1496 u=alejandro n=ansible |   1496 1593820194.89132: Loading CallbackModule 'splunk' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/splunk.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,895 p=1496 u=alejandro n=ansible |   1496 1593820194.89512: Loading ModuleDocFragment 'default_callback' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/doc_fragments/default_callback.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:54,905 p=1496 u=alejandro n=ansible |   1496 1593820194.90549: Loaded config def from plugin (callback/stderr)
+2020-07-03 18:49:54,909 p=1496 u=alejandro n=ansible |   1496 1593820194.90612: Loading CallbackModule 'stderr' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/stderr.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,913 p=1496 u=alejandro n=ansible |   1496 1593820194.91281: Loaded config def from plugin (callback/sumologic)
+2020-07-03 18:49:54,917 p=1496 u=alejandro n=ansible |   1496 1593820194.91363: Loading CallbackModule 'sumologic' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/sumologic.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,925 p=1496 u=alejandro n=ansible |   1496 1593820194.92482: Loaded config def from plugin (callback/syslog_json)
+2020-07-03 18:49:54,929 p=1496 u=alejandro n=ansible |   1496 1593820194.92544: Loading CallbackModule 'syslog_json' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/syslog_json.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,932 p=1496 u=alejandro n=ansible |   1496 1593820194.93151: Loading CallbackModule 'timer' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/timer.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,937 p=1496 u=alejandro n=ansible |   1496 1593820194.93497: Loading CallbackModule 'tree' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/tree.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,940 p=1496 u=alejandro n=ansible |   1496 1593820194.93945: Loading ModuleDocFragment 'default_callback' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/doc_fragments/default_callback.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:54,952 p=1496 u=alejandro n=ansible |   1496 1593820194.95214: Loaded config def from plugin (callback/unixy)
+2020-07-03 18:49:54,953 p=1496 u=alejandro n=ansible |   1496 1593820194.95281: Loading CallbackModule 'unixy' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/unixy.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,956 p=1496 u=alejandro n=ansible |   1496 1593820194.95641: Loading ModuleDocFragment 'default_callback' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/doc_fragments/default_callback.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:54,969 p=1496 u=alejandro n=ansible |   1496 1593820194.96878: Loaded config def from plugin (callback/yaml)
+2020-07-03 18:49:54,970 p=1496 u=alejandro n=ansible |   1496 1593820194.96962: Loading CallbackModule 'yaml' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/callback/yaml.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:54,971 p=1496 u=alejandro n=ansible | PLAYBOOK: playbook-example.yml *****************************************************************************************************************************************
+2020-07-03 18:49:54,972 p=1496 u=alejandro n=ansible | 1 plays in playbook-example.yml
+2020-07-03 18:49:54,973 p=1496 u=alejandro n=ansible |   1496 1593820194.97278: in VariableManager get_vars()
+2020-07-03 18:49:54,976 p=1496 u=alejandro n=ansible |   1496 1593820194.97572: done with get_vars()
+2020-07-03 18:49:54,976 p=1496 u=alejandro n=ansible |   1496 1593820194.97652: in VariableManager get_vars()
+2020-07-03 18:49:54,978 p=1496 u=alejandro n=ansible |   1496 1593820194.97730: done with get_vars()
+2020-07-03 18:49:54,982 p=1496 u=alejandro n=ansible |   1496 1593820194.97953: in VariableManager get_vars()
+2020-07-03 18:49:54,982 p=1496 u=alejandro n=ansible |   1496 1593820194.98262: done with get_vars()
+2020-07-03 18:49:54,984 p=1496 u=alejandro n=ansible | PLAY [PLAY1 - ISSUE SNMP COMMANDS] *************************************************************************************************************************************
+2020-07-03 18:49:54,993 p=1496 u=alejandro n=ansible |   1496 1593820194.99352: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/strategy
+2020-07-03 18:49:54,995 p=1496 u=alejandro n=ansible |   1496 1593820194.99492: Loading StrategyModule 'linear' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/strategy/linear.py
+2020-07-03 18:49:54,996 p=1496 u=alejandro n=ansible |   1496 1593820194.99625: getting the remaining hosts for this loop
+2020-07-03 18:49:54,997 p=1496 u=alejandro n=ansible |   1496 1593820194.99695: done getting the remaining hosts for this loop
+2020-07-03 18:49:55,002 p=1496 u=alejandro n=ansible |   1496 1593820194.99830: building list of next tasks for hosts
+2020-07-03 18:49:55,003 p=1496 u=alejandro n=ansible |   1496 1593820195.00280: getting the next task for host 10.241.176.139
+2020-07-03 18:49:55,003 p=1496 u=alejandro n=ansible |   1496 1593820195.00343: done getting next task for host 10.241.176.139
+2020-07-03 18:49:55,004 p=1496 u=alejandro n=ansible |   1496 1593820195.00412:  ^ task is: TASK: meta (flush_handlers)
+2020-07-03 18:49:55,005 p=1496 u=alejandro n=ansible |   1496 1593820195.00480:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-07-03 18:49:55,010 p=1496 u=alejandro n=ansible |   1496 1593820195.00600: done building task lists
+2020-07-03 18:49:55,010 p=1496 u=alejandro n=ansible |   1496 1593820195.01068: counting tasks in each state of execution
+2020-07-03 18:49:55,013 p=1496 u=alejandro n=ansible |   1496 1593820195.01127: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 1
+	num_rescue: 0
+	num_always: 0
+2020-07-03 18:49:55,014 p=1496 u=alejandro n=ansible |   1496 1593820195.01440: advancing hosts in ITERATING_TASKS
+2020-07-03 18:49:55,019 p=1496 u=alejandro n=ansible |   1496 1593820195.01498: starting to advance hosts
+2020-07-03 18:49:55,020 p=1496 u=alejandro n=ansible |   1496 1593820195.01982: getting the next task for host 10.241.176.139
+2020-07-03 18:49:55,020 p=1496 u=alejandro n=ansible |   1496 1593820195.02061: done getting next task for host 10.241.176.139
+2020-07-03 18:49:55,021 p=1496 u=alejandro n=ansible |   1496 1593820195.02121:  ^ task is: TASK: meta (flush_handlers)
+2020-07-03 18:49:55,022 p=1496 u=alejandro n=ansible |   1496 1593820195.02194:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-07-03 18:49:55,023 p=1496 u=alejandro n=ansible |   1496 1593820195.02314: done advancing hosts to next task
+2020-07-03 18:49:55,024 p=1496 u=alejandro n=ansible | META: ran handlers
+2020-07-03 18:49:55,024 p=1496 u=alejandro n=ansible |   1496 1593820195.02449: done queuing things up, now waiting for results queue to drain
+2020-07-03 18:49:55,025 p=1496 u=alejandro n=ansible |   1496 1593820195.02523: results queue empty
+2020-07-03 18:49:55,026 p=1496 u=alejandro n=ansible |   1496 1593820195.02582: checking for any_errors_fatal
+2020-07-03 18:49:55,026 p=1496 u=alejandro n=ansible |   1496 1593820195.02663: done checking for any_errors_fatal
+2020-07-03 18:49:55,029 p=1496 u=alejandro n=ansible |   1496 1593820195.02722: checking for max_fail_percentage
+2020-07-03 18:49:55,032 p=1496 u=alejandro n=ansible |   1496 1593820195.02943: done checking for max_fail_percentage
+2020-07-03 18:49:55,032 p=1496 u=alejandro n=ansible |   1496 1593820195.03242: checking to see if all hosts have failed and the running result is not ok
+2020-07-03 18:49:55,033 p=1496 u=alejandro n=ansible |   1496 1593820195.03319: done checking to see if all hosts have failed
+2020-07-03 18:49:55,034 p=1496 u=alejandro n=ansible |   1496 1593820195.03387: getting the remaining hosts for this loop
+2020-07-03 18:49:55,035 p=1496 u=alejandro n=ansible |   1496 1593820195.03479: done getting the remaining hosts for this loop
+2020-07-03 18:49:55,035 p=1496 u=alejandro n=ansible |   1496 1593820195.03569: building list of next tasks for hosts
+2020-07-03 18:49:55,036 p=1496 u=alejandro n=ansible |   1496 1593820195.03631: getting the next task for host 10.241.176.139
+2020-07-03 18:49:55,038 p=1496 u=alejandro n=ansible |   1496 1593820195.03705: done getting next task for host 10.241.176.139
+2020-07-03 18:49:55,041 p=1496 u=alejandro n=ansible |   1496 1593820195.03884:  ^ task is: TASK: TASK1 - DEPLOY SNMP COMMANDS
+2020-07-03 18:49:55,042 p=1496 u=alejandro n=ansible |   1496 1593820195.04185:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-07-03 18:49:55,042 p=1496 u=alejandro n=ansible |   1496 1593820195.04248: done building task lists
+2020-07-03 18:49:55,043 p=1496 u=alejandro n=ansible |   1496 1593820195.04303: counting tasks in each state of execution
+2020-07-03 18:49:55,046 p=1496 u=alejandro n=ansible |   1496 1593820195.04379: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 1
+	num_rescue: 0
+	num_always: 0
+2020-07-03 18:49:55,048 p=1496 u=alejandro n=ansible |   1496 1593820195.04686: advancing hosts in ITERATING_TASKS
+2020-07-03 18:49:55,052 p=1496 u=alejandro n=ansible |   1496 1593820195.04876: starting to advance hosts
+2020-07-03 18:49:55,052 p=1496 u=alejandro n=ansible |   1496 1593820195.05268: getting the next task for host 10.241.176.139
+2020-07-03 18:49:55,053 p=1496 u=alejandro n=ansible |   1496 1593820195.05335: done getting next task for host 10.241.176.139
+2020-07-03 18:49:55,054 p=1496 u=alejandro n=ansible |   1496 1593820195.05390:  ^ task is: TASK: TASK1 - DEPLOY SNMP COMMANDS
+2020-07-03 18:49:55,055 p=1496 u=alejandro n=ansible |   1496 1593820195.05445:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-07-03 18:49:55,055 p=1496 u=alejandro n=ansible |   1496 1593820195.05547: done advancing hosts to next task
+2020-07-03 18:49:55,056 p=1496 u=alejandro n=ansible |   1496 1593820195.05617: getting variables
+2020-07-03 18:49:55,058 p=1496 u=alejandro n=ansible |   1496 1593820195.05669: in VariableManager get_vars()
+2020-07-03 18:49:55,061 p=1496 u=alejandro n=ansible |   1496 1593820195.05897: Calling all_inventory to load vars for 10.241.176.139
+2020-07-03 18:49:55,062 p=1496 u=alejandro n=ansible |   1496 1593820195.06178: Calling groups_inventory to load vars for 10.241.176.139
+2020-07-03 18:49:55,062 p=1496 u=alejandro n=ansible |   1496 1593820195.06239: Calling all_plugins_inventory to load vars for 10.241.176.139
+2020-07-03 18:49:55,065 p=1496 u=alejandro n=ansible |   1496 1593820195.06530: Loading VarsModule 'host_group_vars' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/vars/host_group_vars.py
+2020-07-03 18:49:55,066 p=1496 u=alejandro n=ansible |   1496 1593820195.06627: Calling all_plugins_play to load vars for 10.241.176.139
+2020-07-03 18:49:55,072 p=1496 u=alejandro n=ansible |   1496 1593820195.06761: Loading VarsModule 'host_group_vars' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:55,073 p=1496 u=alejandro n=ansible |   1496 1593820195.07276: Calling groups_plugins_inventory to load vars for 10.241.176.139
+2020-07-03 18:49:55,074 p=1496 u=alejandro n=ansible |   1496 1593820195.07376: Loading VarsModule 'host_group_vars' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:55,075 p=1496 u=alejandro n=ansible |   1496 1593820195.07518: Calling groups_plugins_play to load vars for 10.241.176.139
+2020-07-03 18:49:55,076 p=1496 u=alejandro n=ansible |   1496 1593820195.07615: Loading VarsModule 'host_group_vars' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:55,081 p=1496 u=alejandro n=ansible |   1496 1593820195.07794: Loading VarsModule 'host_group_vars' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:55,083 p=1496 u=alejandro n=ansible |   1496 1593820195.08259: Loading VarsModule 'host_group_vars' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:55,087 p=1496 u=alejandro n=ansible |   1496 1593820195.08630: done with get_vars()
+2020-07-03 18:49:55,089 p=1496 u=alejandro n=ansible |   1496 1593820195.08876: done getting variables
+2020-07-03 18:49:55,091 p=1496 u=alejandro n=ansible |   1496 1593820195.08956: sending task start callback, copying the task so we can template it temporarily
+2020-07-03 18:49:55,092 p=1496 u=alejandro n=ansible |   1496 1593820195.09206: done copying, going to template now
+2020-07-03 18:49:55,093 p=1496 u=alejandro n=ansible |   1496 1593820195.09266: done templating
+2020-07-03 18:49:55,093 p=1496 u=alejandro n=ansible |   1496 1593820195.09341: here goes the callback...
+2020-07-03 18:49:55,094 p=1496 u=alejandro n=ansible | TASK [TASK1 - DEPLOY SNMP COMMANDS] ************************************************************************************************************************************
+2020-07-03 18:49:55,095 p=1496 u=alejandro n=ansible | task path: /home/alejandro/an02/lab2/playbook-example.yml:10
+2020-07-03 18:49:55,097 p=1496 u=alejandro n=ansible |   1496 1593820195.09591: sending task start callback
+2020-07-03 18:49:55,100 p=1496 u=alejandro n=ansible |   1496 1593820195.09794: entering _queue_task() for 10.241.176.139/ios_command
+2020-07-03 18:49:55,101 p=1496 u=alejandro n=ansible |   1496 1593820195.10114: Creating lock for ios_command
+2020-07-03 18:49:55,116 p=1496 u=alejandro n=ansible |   1496 1593820195.11546: worker is 1 (out of 1 available)
+2020-07-03 18:49:55,119 p=1496 u=alejandro n=ansible |   1496 1593820195.11737: exiting _queue_task() for 10.241.176.139/ios_command
+2020-07-03 18:49:55,121 p=1496 u=alejandro n=ansible |   1496 1593820195.12090: done queuing things up, now waiting for results queue to drain
+2020-07-03 18:49:55,121 p=1496 u=alejandro n=ansible |   1496 1593820195.12151: waiting for pending results...
+2020-07-03 18:49:55,123 p=1502 u=alejandro n=ansible |   1502 1593820195.12182: running TaskExecutor() for 10.241.176.139/TASK: TASK1 - DEPLOY SNMP COMMANDS
+2020-07-03 18:49:55,125 p=1502 u=alejandro n=ansible |   1502 1593820195.12486: in run() - task 9829a686-2703-ba49-52d9-000000000008
+2020-07-03 18:49:55,128 p=1502 u=alejandro n=ansible |   1502 1593820195.12738: calling self._execute()
+2020-07-03 18:49:55,155 p=1502 u=alejandro n=ansible |   1502 1593820195.15458: Loading FilterModule 'core' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/core.py
+2020-07-03 18:49:55,158 p=1502 u=alejandro n=ansible |   1502 1593820195.15831: Loading FilterModule 'gcp_kms_filters' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/gcp_kms_filters.py
+2020-07-03 18:49:55,160 p=1502 u=alejandro n=ansible |   1502 1593820195.16066: Loading FilterModule 'ipaddr' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py
+2020-07-03 18:49:55,162 p=1502 u=alejandro n=ansible |   1502 1593820195.16205: Loading FilterModule 'json_query' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py
+2020-07-03 18:49:55,164 p=1502 u=alejandro n=ansible |   1502 1593820195.16367: Loading FilterModule 'k8s' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/k8s.py
+2020-07-03 18:49:55,165 p=1502 u=alejandro n=ansible |   1502 1593820195.16538: Loading FilterModule 'mathstuff' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py
+2020-07-03 18:49:55,169 p=1502 u=alejandro n=ansible |   1502 1593820195.16782: Loading FilterModule 'network' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/network.py
+2020-07-03 18:49:55,170 p=1502 u=alejandro n=ansible |   1502 1593820195.17026: Loading FilterModule 'urls' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/urls.py
+2020-07-03 18:49:55,171 p=1502 u=alejandro n=ansible |   1502 1593820195.17139: Loading FilterModule 'urlsplit' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/urlsplit.py
+2020-07-03 18:49:55,176 p=1502 u=alejandro n=ansible |   1502 1593820195.17585: Loading TestModule 'core' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/test/core.py
+2020-07-03 18:49:55,177 p=1502 u=alejandro n=ansible |   1502 1593820195.17707: Loading TestModule 'files' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/test/files.py
+2020-07-03 18:49:55,178 p=1502 u=alejandro n=ansible |   1502 1593820195.17820: Loading TestModule 'mathstuff' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py
+2020-07-03 18:49:55,182 p=1502 u=alejandro n=ansible |   1502 1593820195.18146: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection
+2020-07-03 18:49:55,187 p=1502 u=alejandro n=ansible |   1502 1593820195.18411: Loading Connection 'local' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/local.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:55,188 p=1502 u=alejandro n=ansible |   1502 1593820195.18775: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell
+2020-07-03 18:49:55,189 p=1502 u=alejandro n=ansible |   1502 1593820195.18881: Loading ShellModule 'sh' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:55,190 p=1502 u=alejandro n=ansible |   1502 1593820195.19002: Loading ShellModule 'sh' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:55,196 p=1502 u=alejandro n=ansible |   1502 1593820195.19664: Loading ActionModule 'ios' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/action/ios.py
+2020-07-03 18:49:55,197 p=1502 u=alejandro n=ansible |   1502 1593820195.19746: starting attempt loop
+2020-07-03 18:49:55,198 p=1502 u=alejandro n=ansible |   1502 1593820195.19810: running the handler
+2020-07-03 18:49:55,199 p=1502 u=alejandro n=ansible | <10.241.176.139> using connection plugin network_cli (was local)
+2020-07-03 18:49:55,202 p=1502 u=alejandro n=ansible |   1502 1593820195.20043: Loading Connection 'persistent' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/persistent.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:55,205 p=1502 u=alejandro n=ansible |   1502 1593820195.20251: Loading ShellModule 'sh' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:55,206 p=1502 u=alejandro n=ansible |   1502 1593820195.20636: Loading ShellModule 'sh' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:56,055 p=1503 u=alejandro n=ansible |   1503 1593820196.05576: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection
+2020-07-03 18:49:56,099 p=1503 u=alejandro n=ansible |   1503 1593820196.09946: Loaded config def from plugin (connection/ssh)
+2020-07-03 18:49:56,099 p=1503 u=alejandro n=ansible |   1503 1593820196.09985: Loading Connection 'ssh' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/ssh.py (found_in_cache=False, class_only=True)
+2020-07-03 18:49:56,179 p=1507 u=alejandro n=ansible |   1507 1593820196.17852: Loaded config def from plugin (connection/network_cli)
+2020-07-03 18:49:56,179 p=1507 u=alejandro n=ansible |   1507 1593820196.17974: Loading Connection 'network_cli' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/network_cli.py
+2020-07-03 18:49:56,180 p=1507 u=alejandro n=ansible |   1507 1593820196.18085: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell
+2020-07-03 18:49:56,186 p=1507 u=alejandro n=ansible |   1507 1593820196.18683: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/doc_fragments
+2020-07-03 18:49:56,191 p=1507 u=alejandro n=ansible |   1507 1593820196.19095: Loading ModuleDocFragment 'shell_common' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/doc_fragments/shell_common.py
+2020-07-03 18:49:56,199 p=1507 u=alejandro n=ansible |   1507 1593820196.19965: Loaded config def from plugin (shell/sh)
+2020-07-03 18:49:56,200 p=1507 u=alejandro n=ansible |   1507 1593820196.20000: Loading ShellModule 'sh' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell/sh.py
+2020-07-03 18:49:56,200 p=1507 u=alejandro n=ansible |   1507 1593820196.20026: Loading ShellModule 'sh' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:56,202 p=1507 u=alejandro n=ansible |   1507 1593820196.20225: Loading Connection 'local' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/local.py
+2020-07-03 18:49:56,202 p=1507 u=alejandro n=ansible |   1507 1593820196.20258: Loading ShellModule 'sh' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:56,202 p=1507 u=alejandro n=ansible |   1507 1593820196.20279: Loading ShellModule 'sh' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:56,203 p=1507 u=alejandro n=ansible |   1507 1593820196.20306: Loading Connection 'ssh' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/ssh.py (found_in_cache=True, class_only=True)
+2020-07-03 18:49:56,215 p=1507 u=alejandro n=ansible |   1507 1593820196.21534: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/terminal
+2020-07-03 18:49:56,218 p=1507 u=alejandro n=ansible |   1507 1593820196.21826: Loading TerminalModule 'ios' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/terminal/ios.py
+2020-07-03 18:49:56,228 p=1507 u=alejandro n=ansible |   1507 1593820196.22843: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/cliconf
+2020-07-03 18:49:56,232 p=1507 u=alejandro n=ansible |   1507 1593820196.23269: Loading Cliconf 'ios' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/cliconf/ios.py
+2020-07-03 18:49:56,264 p=1502 u=alejandro n=ansible | network_os is set to ios
+2020-07-03 18:49:56,266 p=1502 u=alejandro n=ansible |   1502 1593820196.26596: _low_level_execute_command(): starting
+2020-07-03 18:49:56,267 p=1502 u=alejandro n=ansible |   1502 1593820196.26707: _low_level_execute_command(): executing: /bin/sh -c 'echo ~alejandro && sleep 0'
+2020-07-03 18:49:56,268 p=1502 u=alejandro n=ansible | <10.241.176.139> ESTABLISH LOCAL CONNECTION FOR USER: alejandro
+2020-07-03 18:49:56,268 p=1502 u=alejandro n=ansible |   1502 1593820196.26862: in local.exec_command()
+2020-07-03 18:49:56,269 p=1502 u=alejandro n=ansible | <10.241.176.139> EXEC /bin/sh -c 'echo ~alejandro && sleep 0'
+2020-07-03 18:49:56,270 p=1502 u=alejandro n=ansible |   1502 1593820196.27003: opening command with Popen()
+2020-07-03 18:49:56,285 p=1502 u=alejandro n=ansible |   1502 1593820196.28428: done running command with Popen()
+2020-07-03 18:49:56,287 p=1502 u=alejandro n=ansible |   1502 1593820196.28668: getting output with communicate()
+2020-07-03 18:49:56,308 p=1502 u=alejandro n=ansible |   1502 1593820196.30818: done communicating
+2020-07-03 18:49:56,309 p=1502 u=alejandro n=ansible |   1502 1593820196.30910: done with local.exec_command()
+2020-07-03 18:49:56,310 p=1502 u=alejandro n=ansible |   1502 1593820196.30999: _low_level_execute_command() done: rc=0, stdout=/home/alejandro
+, stderr=
+2020-07-03 18:49:56,312 p=1502 u=alejandro n=ansible |   1502 1593820196.31180: _low_level_execute_command(): starting
+2020-07-03 18:49:56,313 p=1502 u=alejandro n=ansible |   1502 1593820196.31290: _low_level_execute_command(): executing: /bin/sh -c '( umask 77 && mkdir -p "` echo /home/alejandro/.ansible/tmp `"&& mkdir /home/alejandro/.ansible/tmp/ansible-tmp-1593820196.31-1502-147515543795929 && echo ansible-tmp-1593820196.31-1502-147515543795929="` echo /home/alejandro/.ansible/tmp/ansible-tmp-1593820196.31-1502-147515543795929 `" ) && sleep 0'
+2020-07-03 18:49:56,314 p=1502 u=alejandro n=ansible |   1502 1593820196.31440: in local.exec_command()
+2020-07-03 18:49:56,316 p=1502 u=alejandro n=ansible | <10.241.176.139> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/alejandro/.ansible/tmp `"&& mkdir /home/alejandro/.ansible/tmp/ansible-tmp-1593820196.31-1502-147515543795929 && echo ansible-tmp-1593820196.31-1502-147515543795929="` echo /home/alejandro/.ansible/tmp/ansible-tmp-1593820196.31-1502-147515543795929 `" ) && sleep 0'
+2020-07-03 18:49:56,316 p=1502 u=alejandro n=ansible |   1502 1593820196.31672: opening command with Popen()
+2020-07-03 18:49:56,332 p=1502 u=alejandro n=ansible |   1502 1593820196.33126: done running command with Popen()
+2020-07-03 18:49:56,334 p=1502 u=alejandro n=ansible |   1502 1593820196.33341: getting output with communicate()
+2020-07-03 18:49:56,373 p=1502 u=alejandro n=ansible |   1502 1593820196.37286: done communicating
+2020-07-03 18:49:56,373 p=1502 u=alejandro n=ansible |   1502 1593820196.37360: done with local.exec_command()
+2020-07-03 18:49:56,375 p=1502 u=alejandro n=ansible |   1502 1593820196.37435: _low_level_execute_command() done: rc=0, stdout=ansible-tmp-1593820196.31-1502-147515543795929=/home/alejandro/.ansible/tmp/ansible-tmp-1593820196.31-1502-147515543795929
+, stderr=
+2020-07-03 18:49:56,377 p=1502 u=alejandro n=ansible |   1502 1593820196.37734: ANSIBALLZ: Using lock for ios_command
+2020-07-03 18:49:56,378 p=1502 u=alejandro n=ansible |   1502 1593820196.37790: ANSIBALLZ: Acquiring lock
+2020-07-03 18:49:56,378 p=1502 u=alejandro n=ansible |   1502 1593820196.37853: ANSIBALLZ: Lock acquired: 140648850219920
+2020-07-03 18:49:56,379 p=1502 u=alejandro n=ansible |   1502 1593820196.37916: ANSIBALLZ: Creating module
+2020-07-03 18:49:56,641 p=1502 u=alejandro n=ansible |   1502 1593820196.64139: ANSIBALLZ: Writing module into payload
+2020-07-03 18:49:56,643 p=1502 u=alejandro n=ansible |   1502 1593820196.64372: ANSIBALLZ: Writing module
+2020-07-03 18:49:56,645 p=1502 u=alejandro n=ansible |   1502 1593820196.64571: ANSIBALLZ: Renaming module
+2020-07-03 18:49:56,647 p=1502 u=alejandro n=ansible |   1502 1593820196.64720: ANSIBALLZ: Done creating module
+2020-07-03 18:49:56,649 p=1502 u=alejandro n=ansible | Using module file /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/modules/network/ios/ios_command.py
+2020-07-03 18:49:56,651 p=1502 u=alejandro n=ansible |   1502 1593820196.65018: transferring module to remote /home/alejandro/.ansible/tmp/ansible-tmp-1593820196.31-1502-147515543795929/AnsiballZ_ios_command.py
+2020-07-03 18:49:56,655 p=1502 u=alejandro n=ansible | <10.241.176.139> PUT /home/alejandro/.ansible/tmp/ansible-local-1496hrlVsR/tmpWh_o2n TO /home/alejandro/.ansible/tmp/ansible-tmp-1593820196.31-1502-147515543795929/AnsiballZ_ios_command.py
+2020-07-03 18:49:56,681 p=1502 u=alejandro n=ansible |   1502 1593820196.68069: done transferring module to remote
+2020-07-03 18:49:56,681 p=1502 u=alejandro n=ansible |   1502 1593820196.68172: _low_level_execute_command(): starting
+2020-07-03 18:49:56,683 p=1502 u=alejandro n=ansible |   1502 1593820196.68238: _low_level_execute_command(): executing: /bin/sh -c 'chmod u+x /home/alejandro/.ansible/tmp/ansible-tmp-1593820196.31-1502-147515543795929/ /home/alejandro/.ansible/tmp/ansible-tmp-1593820196.31-1502-147515543795929/AnsiballZ_ios_command.py && sleep 0'
+2020-07-03 18:49:56,684 p=1502 u=alejandro n=ansible |   1502 1593820196.68384: in local.exec_command()
+2020-07-03 18:49:56,685 p=1502 u=alejandro n=ansible | <10.241.176.139> EXEC /bin/sh -c 'chmod u+x /home/alejandro/.ansible/tmp/ansible-tmp-1593820196.31-1502-147515543795929/ /home/alejandro/.ansible/tmp/ansible-tmp-1593820196.31-1502-147515543795929/AnsiballZ_ios_command.py && sleep 0'
+2020-07-03 18:49:56,686 p=1502 u=alejandro n=ansible |   1502 1593820196.68582: opening command with Popen()
+2020-07-03 18:49:56,703 p=1502 u=alejandro n=ansible |   1502 1593820196.70177: done running command with Popen()
+2020-07-03 18:49:56,704 p=1502 u=alejandro n=ansible |   1502 1593820196.70396: getting output with communicate()
+2020-07-03 18:49:56,724 p=1502 u=alejandro n=ansible |   1502 1593820196.72450: done communicating
+2020-07-03 18:49:56,725 p=1502 u=alejandro n=ansible |   1502 1593820196.72530: done with local.exec_command()
+2020-07-03 18:49:56,726 p=1502 u=alejandro n=ansible |   1502 1593820196.72607: _low_level_execute_command() done: rc=0, stdout=, stderr=
+2020-07-03 18:49:56,727 p=1502 u=alejandro n=ansible |   1502 1593820196.72681: _low_level_execute_command(): starting
+2020-07-03 18:49:56,729 p=1502 u=alejandro n=ansible |   1502 1593820196.72798: _low_level_execute_command(): executing: /bin/sh -c '/usr/bin/env python /home/alejandro/.ansible/tmp/ansible-tmp-1593820196.31-1502-147515543795929/AnsiballZ_ios_command.py && sleep 0'
+2020-07-03 18:49:56,729 p=1502 u=alejandro n=ansible |   1502 1593820196.72957: in local.exec_command()
+2020-07-03 18:49:56,730 p=1502 u=alejandro n=ansible | <10.241.176.139> EXEC /bin/sh -c '/usr/bin/env python /home/alejandro/.ansible/tmp/ansible-tmp-1593820196.31-1502-147515543795929/AnsiballZ_ios_command.py && sleep 0'
+2020-07-03 18:49:56,731 p=1502 u=alejandro n=ansible |   1502 1593820196.73110: opening command with Popen()
+2020-07-03 18:49:56,746 p=1502 u=alejandro n=ansible |   1502 1593820196.74549: done running command with Popen()
+2020-07-03 18:49:56,747 p=1502 u=alejandro n=ansible |   1502 1593820196.74742: getting output with communicate()
+2020-07-03 18:49:57,018 p=1507 u=alejandro n=ansible |   1507 1593820197.01825: Loaded config def from plugin (connection/paramiko_ssh)
+2020-07-03 18:49:57,018 p=1507 u=alejandro n=ansible |   1507 1593820197.01863: Loading Connection 'paramiko_ssh' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/paramiko_ssh.py
+2020-07-03 18:49:57,018 p=1507 u=alejandro n=ansible |   1507 1593820197.01887: Loading ShellModule 'sh' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:57,019 p=1507 u=alejandro n=ansible |   1507 1593820197.01909: Loading ShellModule 'sh' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2020-07-03 18:49:57,019 p=1507 u=alejandro n=ansible | <10.241.176.139> ESTABLISH PARAMIKO SSH CONNECTION FOR USER: ATT9047833 on PORT 22 TO 10.241.176.139
+2020-07-03 18:49:57,159 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | starting thread (client mode): 0xe71b4410L
+2020-07-03 18:49:57,161 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | Local version/idstring: SSH-2.0-paramiko_2.7.1
+2020-07-03 18:49:57,289 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | Remote version/idstring: SSH-1.99-Cisco-1.25
+2020-07-03 18:49:57,290 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | Connected (version 1.99, client Cisco-1.25)
+2020-07-03 18:49:57,306 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | kex algos:[u'diffie-hellman-group-exchange-sha1', u'diffie-hellman-group14-sha1'] server key:[u'ssh-rsa'] client encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr'] server encrypt:[u'aes128-ctr', u'aes192-ctr', u'aes256-ctr'] client mac:[u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1', u'hmac-sha1-96'] server mac:[u'hmac-sha2-256', u'hmac-sha2-512', u'hmac-sha1', u'hmac-sha1-96'] client compress:[u'none'] server compress:[u'none'] client lang:[u''] server lang:[u''] kex follows?False
+2020-07-03 18:49:57,307 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | Kex agreed: diffie-hellman-group-exchange-sha1
+2020-07-03 18:49:57,308 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | HostKey agreed: ssh-rsa
+2020-07-03 18:49:57,309 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | Cipher agreed: aes128-ctr
+2020-07-03 18:49:57,309 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | MAC agreed: hmac-sha2-256
+2020-07-03 18:49:57,310 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | Compression agreed: none
+2020-07-03 18:49:57,560 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | Got server p (2048 bits)
+2020-07-03 18:49:57,882 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+2020-07-03 18:49:57,883 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | Switch to new keys ...
+2020-07-03 18:49:58,313 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | userauth is OK
+2020-07-03 18:49:58,315 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | Auth banner: C
+ ------------------------------------------------------------------------------
+                          Bienvenido a MXBCNTIJ0346RTBHCSRMOB01
+              AVISO SOBRE EL USO DEL SISTEMA EN FORMA NO AUTORIZADA
+ El uso de este sistema esta RESTRINGIDO SOLAMENTE PARA PERSONAL AUTORIZADO.
+ Cualquier actividad es monitoreada y registrada por personal del area de
+ sistemas, por lo tanto cualquier persona que haga uso del mismo acepta
+ que estas actividades sean monitoreadas y registradas.
+ Estar consciente que si cualquier actividad criminal es detectada, dichos
+ registros asi como informacion personal seran entregadas a las autoridades
+ correspondientes para su investigacion.
+ -----------------------------------------------------------------------------
+                          Welcome to MXBCNTIJ0346RTBHCSRMOB01
+                      SYSTEM UNAUTHORIZED USE WARNING
+ Use of this network device or system is RESTRICTED TO AUTHORIZED USERS.
+ User activity is monitored and recorder by system personnel. Anyone using the
+ network expressly consents to such monitoring and recording. BE ADVISED, if
+ possible criminal activity is detected, system record, along with certain
+ personal information, may be provided to law enforcement officials.
+ -----------------------------------------------------------------------------
+
+2020-07-03 18:49:58,618 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | Authentication (password) successful!
+2020-07-03 18:49:58,634 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | [chan 0] Max packet in: 32768 bytes
+2020-07-03 18:49:58,766 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | [chan 0] Max packet out: 4096 bytes
+2020-07-03 18:49:58,766 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | Secsh channel 0 opened.
+2020-07-03 18:49:58,898 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | [chan 0] Sesch channel 0 request ok
+2020-07-03 18:49:59,027 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | [chan 0] Sesch channel 0 request ok
+2020-07-03 18:50:02,505 p=1502 u=alejandro n=ansible |   1502 1593820202.50509: done communicating
+2020-07-03 18:50:02,506 p=1502 u=alejandro n=ansible |   1502 1593820202.50596: done with local.exec_command()
+2020-07-03 18:50:02,510 p=1502 u=alejandro n=ansible |   1502 1593820202.50686: _low_level_execute_command() done: rc=0, stdout=
+{"invocation": {"module_args": {"username": null, "authorize": null, "commands": ["show run | inc snmp"], "ssh_keyfile": null, "retries": 10, "password": null, "auth_pass": null, "interval": 1, "host": null, "timeout": null, "provider": {"username": "ATT9047833", "authorize": false, "ssh_keyfile": null, "auth_pass": null, "host": "10.241.176.139", "timeout": 1000, "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER", "port": null}, "wait_for": null, "port": null, "match": "all"}}, "stdout_lines": [["permit udp host 10.241.176.139 eq snmp any", " permit udp host 10.241.176.139 any eq snmp", "snmp-server community netview RW 95", "snmp-server community 3PnM4n4g3R_2017! RO", "snmp-server community 4TTipbh16 RW 97", "snmp-server community Pr1m3Su1t3_2016 RW 98", "snmp-server community 0SSN3TC00L RW 99", "snmp-server trap-source Loopback1", "snmp-server location Tijuana", "snmp-server contact mx.noc.ipbh@mx.att.com", "snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart", "snmp-server enable traps license", "snmp-server enable traps bfd", "snmp-server enable traps bgp", "snmp-server enable traps bgp cbgp2", "snmp-server enable traps config-copy", "snmp-server enable traps config", "snmp-server enable traps config-ctid", "snmp-server enable traps event-manager", "snmp-server enable traps isis", "snmp-server enable traps syslog", "snmp-server enable traps memory bufferpeak", "snmp-server enable traps entity-state", "snmp-server enable traps fru-ctrl", "snmp-server enable traps entity", "snmp-server enable traps cpu threshold", "snmp-server enable traps rep", "snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency", "snmp-server enable traps resource-policy", "snmp-server enable traps flash insertion", "snmp-server enable traps flash removal", "snmp-server enable traps netsync", "snmp-server enable traps aaa_server", "snmp-server enable traps mpls rfc ldp", "snmp-server enable traps mpls ldp", "snmp-server enable traps mpls fast-reroute protected", "snmp-server enable traps pw vc", "snmp-server enable traps alarms informational", "snmp-server enable traps mac-notification", "snmp-server enable traps ethernet cfm alarm", "snmp-server enable traps transceiver all", "snmp-server enable traps mpls vpn", "snmp-server enable traps mpls rfc vpn", "snmp-server host 10.32.242.138 vrf ATT_OAM version 2c 0SSN3TC00L ", "snmp-server host 10.32.242.139 vrf ATT_OAM version 2c 0SSN3TC00L ", "snmp-server host 10.32.242.143 vrf ATT_OAM version 2c 0SSN3TC00L ", "snmp-server host 10.32.209.28 vrf ATT_OAM version 2c 3PnM4n4g3R_2017! ", "snmp-server host 10.36.226.108 vrf ATT_OAM version 2c 3PnM4n4g3R_2017! ", "snmp-server host 172.19.235.148 vrf ATT_OAM version 2c 4TTipbh16 ", "snmp-server host 172.19.236.160 vrf ATT_OAM version 2c 4TTipbh16 ", "snmp-server host 10.32.250.68 vrf ATT_OAM version 2c Pr1m3Su1t3_2016 ", "snmp-server host 10.36.1.68 vrf ATT_OAM version 2c Pr1m3Su1t3_2016 ", "snmp-server host 10.150.10.195 vrf ATT_OAM version 2c netview ", "snmp-server host 10.150.10.200 vrf ATT_OAM version 2c netview ", "snmp-server host 10.150.10.201 vrf ATT_OAM version 2c netview ", "snmp-server host 10.150.10.203 vrf ATT_OAM version 2c netview ", "snmp-server host 10.150.10.204 vrf ATT_OAM version 2c netview ", "snmp-server host 10.150.10.205 vrf ATT_OAM version 2c netview ", "snmp-server host 10.150.10.210 vrf ATT_OAM version 2c netview ", "snmp-server host 10.150.10.236 vrf ATT_OAM version 2c netview ", "snmp-server host 10.32.240.171 vrf ATT_OAM version 2c netview ", "snmp ifmib ifindex persist"]], "changed": false, "stdout": ["permit udp host 10.241.176.139 eq snmp any\n permit udp host 10.241.176.139 any eq snmp\nsnmp-server community netview RW 95\nsnmp-server community 3PnM4n4g3R_2017! RO\nsnmp-server community 4TTipbh16 RW 97\nsnmp-server community Pr1m3Su1t3_2016 RW 98\nsnmp-server community 0SSN3TC00L RW 99\nsnmp-server trap-source Loopback1\nsnmp-server location Tijuana\nsnmp-server contact mx.noc.ipbh@mx.att.com\nsnmp-server enable traps snmp authentication linkdown linkup coldstart warmstart\nsnmp-server enable traps license\nsnmp-server enable traps bfd\nsnmp-server enable traps bgp\nsnmp-server enable traps bgp cbgp2\nsnmp-server enable traps config-copy\nsnmp-server enable traps config\nsnmp-server enable traps config-ctid\nsnmp-server enable traps event-manager\nsnmp-server enable traps isis\nsnmp-server enable traps syslog\nsnmp-server enable traps memory bufferpeak\nsnmp-server enable traps entity-state\nsnmp-server enable traps fru-ctrl\nsnmp-server enable traps entity\nsnmp-server enable traps cpu threshold\nsnmp-server enable traps rep\nsnmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency\nsnmp-server enable traps resource-policy\nsnmp-server enable traps flash insertion\nsnmp-server enable traps flash removal\nsnmp-server enable traps netsync\nsnmp-server enable traps aaa_server\nsnmp-server enable traps mpls rfc ldp\nsnmp-server enable traps mpls ldp\nsnmp-server enable traps mpls fast-reroute protected\nsnmp-server enable traps pw vc\nsnmp-server enable traps alarms informational\nsnmp-server enable traps mac-notification\nsnmp-server enable traps ethernet cfm alarm\nsnmp-server enable traps transceiver all\nsnmp-server enable traps mpls vpn\nsnmp-server enable traps mpls rfc vpn\nsnmp-server host 10.32.242.138 vrf ATT_OAM version 2c 0SSN3TC00L \nsnmp-server host 10.32.242.139 vrf ATT_OAM version 2c 0SSN3TC00L \nsnmp-server host 10.32.242.143 vrf ATT_OAM version 2c 0SSN3TC00L \nsnmp-server host 10.32.209.28 vrf ATT_OAM version 2c 3PnM4n4g3R_2017! \nsnmp-server host 10.36.226.108 vrf ATT_OAM version 2c 3PnM4n4g3R_2017! \nsnmp-server host 172.19.235.148 vrf ATT_OAM version 2c 4TTipbh16 \nsnmp-server host 172.19.236.160 vrf ATT_OAM version 2c 4TTipbh16 \nsnmp-server host 10.32.250.68 vrf ATT_OAM version 2c Pr1m3Su1t3_2016 \nsnmp-server host 10.36.1.68 vrf ATT_OAM version 2c Pr1m3Su1t3_2016 \nsnmp-server host 10.150.10.195 vrf ATT_OAM version 2c netview \nsnmp-server host 10.150.10.200 vrf ATT_OAM version 2c netview \nsnmp-server host 10.150.10.201 vrf ATT_OAM version 2c netview \nsnmp-server host 10.150.10.203 vrf ATT_OAM version 2c netview \nsnmp-server host 10.150.10.204 vrf ATT_OAM version 2c netview \nsnmp-server host 10.150.10.205 vrf ATT_OAM version 2c netview \nsnmp-server host 10.150.10.210 vrf ATT_OAM version 2c netview \nsnmp-server host 10.150.10.236 vrf ATT_OAM version 2c netview \nsnmp-server host 10.32.240.171 vrf ATT_OAM version 2c netview \nsnmp ifmib ifindex persist"], "warnings": []}
+, stderr=
+2020-07-03 18:50:02,514 p=1502 u=alejandro n=ansible |   1502 1593820202.51354: done with _execute_module (ios_command, {'_ansible_version': '2.9.10', u'commands': [u'show run | inc snmp'], '_ansible_selinux_special_fs': ['fuse', 'nfs', 'vboxsf', 'ramfs', '9p', 'vfat'], '_ansible_no_log': False, '_ansible_module_name': u'ios_command', u'provider': {u'username': u'ATT9047833', 'authorize': False, 'ssh_keyfile': None, 'auth_pass': None, u'host': u'10.241.176.139', u'timeout': 1000, u'password': u'M3x#4Tt.20i9Fa', 'port': None}, '_ansible_verbosity': 3, '_ansible_keep_remote_files': False, '_ansible_syslog_facility': u'LOG_USER', '_ansible_socket': u'/home/alejandro/.ansible/pc/c95195480e', '_ansible_string_conversion_action': u'warn', '_ansible_remote_tmp': u'~/.ansible/tmp', '_ansible_diff': False, '_ansible_debug': True, '_ansible_shell_executable': u'/bin/sh', '_ansible_check_mode': False, '_ansible_tmpdir': u'/home/alejandro/.ansible/tmp/ansible-tmp-1593820196.31-1502-147515543795929/'})
+2020-07-03 18:50:02,519 p=1502 u=alejandro n=ansible |   1502 1593820202.51516: _low_level_execute_command(): starting
+2020-07-03 18:50:02,521 p=1502 u=alejandro n=ansible |   1502 1593820202.52033: _low_level_execute_command(): executing: /bin/sh -c 'rm -f -r /home/alejandro/.ansible/tmp/ansible-tmp-1593820196.31-1502-147515543795929/ > /dev/null 2>&1 && sleep 0'
+2020-07-03 18:50:02,521 p=1502 u=alejandro n=ansible |   1502 1593820202.52168: in local.exec_command()
+2020-07-03 18:50:02,522 p=1502 u=alejandro n=ansible | <10.241.176.139> EXEC /bin/sh -c 'rm -f -r /home/alejandro/.ansible/tmp/ansible-tmp-1593820196.31-1502-147515543795929/ > /dev/null 2>&1 && sleep 0'
+2020-07-03 18:50:02,523 p=1502 u=alejandro n=ansible |   1502 1593820202.52326: opening command with Popen()
+2020-07-03 18:50:02,540 p=1502 u=alejandro n=ansible |   1502 1593820202.53830: done running command with Popen()
+2020-07-03 18:50:02,541 p=1502 u=alejandro n=ansible |   1502 1593820202.54102: getting output with communicate()
+2020-07-03 18:50:02,565 p=1502 u=alejandro n=ansible |   1502 1593820202.56516: done communicating
+2020-07-03 18:50:02,566 p=1502 u=alejandro n=ansible |   1502 1593820202.56610: done with local.exec_command()
+2020-07-03 18:50:02,567 p=1502 u=alejandro n=ansible |   1502 1593820202.56699: _low_level_execute_command() done: rc=0, stdout=, stderr=
+2020-07-03 18:50:02,568 p=1502 u=alejandro n=ansible |   1502 1593820202.56823: handler run complete
+2020-07-03 18:50:02,570 p=1502 u=alejandro n=ansible |   1502 1593820202.56978: attempt loop complete, returning result
+2020-07-03 18:50:02,570 p=1502 u=alejandro n=ansible |   1502 1593820202.57050: _execute() done
+2020-07-03 18:50:02,571 p=1502 u=alejandro n=ansible |   1502 1593820202.57105: dumping result to json
+2020-07-03 18:50:02,572 p=1502 u=alejandro n=ansible |   1502 1593820202.57193: done dumping result, returning
+2020-07-03 18:50:02,573 p=1502 u=alejandro n=ansible |   1502 1593820202.57278: done running TaskExecutor() for 10.241.176.139/TASK: TASK1 - DEPLOY SNMP COMMANDS [9829a686-2703-ba49-52d9-000000000008]
+2020-07-03 18:50:02,574 p=1502 u=alejandro n=ansible |   1502 1593820202.57370: sending task result for task 9829a686-2703-ba49-52d9-000000000008
+2020-07-03 18:50:02,576 p=1502 u=alejandro n=ansible |   1502 1593820202.57506: done sending task result for task 9829a686-2703-ba49-52d9-000000000008
+2020-07-03 18:50:02,579 p=1502 u=alejandro n=ansible |   1502 1593820202.57694: WORKER PROCESS EXITING
+2020-07-03 18:50:02,665 p=1496 u=alejandro n=ansible | ok: [10.241.176.139] => {
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "auth_pass": null, 
+            "authorize": null, 
+            "commands": [
+                "show run | inc snmp"
+            ], 
+            "host": null, 
+            "interval": 1, 
+            "match": "all", 
+            "password": null, 
+            "port": null, 
+            "provider": {
+                "auth_pass": null, 
+                "authorize": false, 
+                "host": "10.241.176.139", 
+                "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER", 
+                "port": null, 
+                "ssh_keyfile": null, 
+                "timeout": 1000, 
+                "username": "ATT9047833"
+            }, 
+            "retries": 10, 
+            "ssh_keyfile": null, 
+            "timeout": null, 
+            "username": null, 
+            "wait_for": null
+        }
+    }, 
+    "stdout": [
+        "permit udp host 10.241.176.139 eq snmp any\n permit udp host 10.241.176.139 any eq snmp\nsnmp-server community netview RW 95\nsnmp-server community 3PnM4n4g3R_2017! RO\nsnmp-server community 4TTipbh16 RW 97\nsnmp-server community Pr1m3Su1t3_2016 RW 98\nsnmp-server community 0SSN3TC00L RW 99\nsnmp-server trap-source Loopback1\nsnmp-server location Tijuana\nsnmp-server contact mx.noc.ipbh@mx.att.com\nsnmp-server enable traps snmp authentication linkdown linkup coldstart warmstart\nsnmp-server enable traps license\nsnmp-server enable traps bfd\nsnmp-server enable traps bgp\nsnmp-server enable traps bgp cbgp2\nsnmp-server enable traps config-copy\nsnmp-server enable traps config\nsnmp-server enable traps config-ctid\nsnmp-server enable traps event-manager\nsnmp-server enable traps isis\nsnmp-server enable traps syslog\nsnmp-server enable traps memory bufferpeak\nsnmp-server enable traps entity-state\nsnmp-server enable traps fru-ctrl\nsnmp-server enable traps entity\nsnmp-server enable traps cpu threshold\nsnmp-server enable traps rep\nsnmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency\nsnmp-server enable traps resource-policy\nsnmp-server enable traps flash insertion\nsnmp-server enable traps flash removal\nsnmp-server enable traps netsync\nsnmp-server enable traps aaa_server\nsnmp-server enable traps mpls rfc ldp\nsnmp-server enable traps mpls ldp\nsnmp-server enable traps mpls fast-reroute protected\nsnmp-server enable traps pw vc\nsnmp-server enable traps alarms informational\nsnmp-server enable traps mac-notification\nsnmp-server enable traps ethernet cfm alarm\nsnmp-server enable traps transceiver all\nsnmp-server enable traps mpls vpn\nsnmp-server enable traps mpls rfc vpn\nsnmp-server host 10.32.242.138 vrf ATT_OAM version 2c 0SSN3TC00L \nsnmp-server host 10.32.242.139 vrf ATT_OAM version 2c 0SSN3TC00L \nsnmp-server host 10.32.242.143 vrf ATT_OAM version 2c 0SSN3TC00L \nsnmp-server host 10.32.209.28 vrf ATT_OAM version 2c 3PnM4n4g3R_2017! \nsnmp-server host 10.36.226.108 vrf ATT_OAM version 2c 3PnM4n4g3R_2017! \nsnmp-server host 172.19.235.148 vrf ATT_OAM version 2c 4TTipbh16 \nsnmp-server host 172.19.236.160 vrf ATT_OAM version 2c 4TTipbh16 \nsnmp-server host 10.32.250.68 vrf ATT_OAM version 2c Pr1m3Su1t3_2016 \nsnmp-server host 10.36.1.68 vrf ATT_OAM version 2c Pr1m3Su1t3_2016 \nsnmp-server host 10.150.10.195 vrf ATT_OAM version 2c netview \nsnmp-server host 10.150.10.200 vrf ATT_OAM version 2c netview \nsnmp-server host 10.150.10.201 vrf ATT_OAM version 2c netview \nsnmp-server host 10.150.10.203 vrf ATT_OAM version 2c netview \nsnmp-server host 10.150.10.204 vrf ATT_OAM version 2c netview \nsnmp-server host 10.150.10.205 vrf ATT_OAM version 2c netview \nsnmp-server host 10.150.10.210 vrf ATT_OAM version 2c netview \nsnmp-server host 10.150.10.236 vrf ATT_OAM version 2c netview \nsnmp-server host 10.32.240.171 vrf ATT_OAM version 2c netview \nsnmp ifmib ifindex persist"
+    ], 
+    "stdout_lines": [
+        [
+            "permit udp host 10.241.176.139 eq snmp any", 
+            " permit udp host 10.241.176.139 any eq snmp", 
+            "snmp-server community netview RW 95", 
+            "snmp-server community 3PnM4n4g3R_2017! RO", 
+            "snmp-server community 4TTipbh16 RW 97", 
+            "snmp-server community Pr1m3Su1t3_2016 RW 98", 
+            "snmp-server community 0SSN3TC00L RW 99", 
+            "snmp-server trap-source Loopback1", 
+            "snmp-server location Tijuana", 
+            "snmp-server contact mx.noc.ipbh@mx.att.com", 
+            "snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart", 
+            "snmp-server enable traps license", 
+            "snmp-server enable traps bfd", 
+            "snmp-server enable traps bgp", 
+            "snmp-server enable traps bgp cbgp2", 
+            "snmp-server enable traps config-copy", 
+            "snmp-server enable traps config", 
+            "snmp-server enable traps config-ctid", 
+            "snmp-server enable traps event-manager", 
+            "snmp-server enable traps isis", 
+            "snmp-server enable traps syslog", 
+            "snmp-server enable traps memory bufferpeak", 
+            "snmp-server enable traps entity-state", 
+            "snmp-server enable traps fru-ctrl", 
+            "snmp-server enable traps entity", 
+            "snmp-server enable traps cpu threshold", 
+            "snmp-server enable traps rep", 
+            "snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency", 
+            "snmp-server enable traps resource-policy", 
+            "snmp-server enable traps flash insertion", 
+            "snmp-server enable traps flash removal", 
+            "snmp-server enable traps netsync", 
+            "snmp-server enable traps aaa_server", 
+            "snmp-server enable traps mpls rfc ldp", 
+            "snmp-server enable traps mpls ldp", 
+            "snmp-server enable traps mpls fast-reroute protected", 
+            "snmp-server enable traps pw vc", 
+            "snmp-server enable traps alarms informational", 
+            "snmp-server enable traps mac-notification", 
+            "snmp-server enable traps ethernet cfm alarm", 
+            "snmp-server enable traps transceiver all", 
+            "snmp-server enable traps mpls vpn", 
+            "snmp-server enable traps mpls rfc vpn", 
+            "snmp-server host 10.32.242.138 vrf ATT_OAM version 2c 0SSN3TC00L ", 
+            "snmp-server host 10.32.242.139 vrf ATT_OAM version 2c 0SSN3TC00L ", 
+            "snmp-server host 10.32.242.143 vrf ATT_OAM version 2c 0SSN3TC00L ", 
+            "snmp-server host 10.32.209.28 vrf ATT_OAM version 2c 3PnM4n4g3R_2017! ", 
+            "snmp-server host 10.36.226.108 vrf ATT_OAM version 2c 3PnM4n4g3R_2017! ", 
+            "snmp-server host 172.19.235.148 vrf ATT_OAM version 2c 4TTipbh16 ", 
+            "snmp-server host 172.19.236.160 vrf ATT_OAM version 2c 4TTipbh16 ", 
+            "snmp-server host 10.32.250.68 vrf ATT_OAM version 2c Pr1m3Su1t3_2016 ", 
+            "snmp-server host 10.36.1.68 vrf ATT_OAM version 2c Pr1m3Su1t3_2016 ", 
+            "snmp-server host 10.150.10.195 vrf ATT_OAM version 2c netview ", 
+            "snmp-server host 10.150.10.200 vrf ATT_OAM version 2c netview ", 
+            "snmp-server host 10.150.10.201 vrf ATT_OAM version 2c netview ", 
+            "snmp-server host 10.150.10.203 vrf ATT_OAM version 2c netview ", 
+            "snmp-server host 10.150.10.204 vrf ATT_OAM version 2c netview ", 
+            "snmp-server host 10.150.10.205 vrf ATT_OAM version 2c netview ", 
+            "snmp-server host 10.150.10.210 vrf ATT_OAM version 2c netview ", 
+            "snmp-server host 10.150.10.236 vrf ATT_OAM version 2c netview ", 
+            "snmp-server host 10.32.240.171 vrf ATT_OAM version 2c netview ", 
+            "snmp ifmib ifindex persist"
+        ]
+    ]
+}
+2020-07-03 18:50:02,666 p=1496 u=alejandro n=ansible |   1496 1593820202.66632: no more pending results, returning what we have
+2020-07-03 18:50:02,668 p=1496 u=alejandro n=ansible |   1496 1593820202.66752: results queue empty
+2020-07-03 18:50:02,671 p=1496 u=alejandro n=ansible |   1496 1593820202.66935: checking for any_errors_fatal
+2020-07-03 18:50:02,672 p=1496 u=alejandro n=ansible |   1496 1593820202.67231: done checking for any_errors_fatal
+2020-07-03 18:50:02,673 p=1496 u=alejandro n=ansible |   1496 1593820202.67286: checking for max_fail_percentage
+2020-07-03 18:50:02,673 p=1496 u=alejandro n=ansible |   1496 1593820202.67364: done checking for max_fail_percentage
+2020-07-03 18:50:02,674 p=1496 u=alejandro n=ansible |   1496 1593820202.67422: checking to see if all hosts have failed and the running result is not ok
+2020-07-03 18:50:02,675 p=1496 u=alejandro n=ansible |   1496 1593820202.67491: done checking to see if all hosts have failed
+2020-07-03 18:50:02,675 p=1496 u=alejandro n=ansible |   1496 1593820202.67553: getting the remaining hosts for this loop
+2020-07-03 18:50:02,676 p=1496 u=alejandro n=ansible |   1496 1593820202.67617: done getting the remaining hosts for this loop
+2020-07-03 18:50:02,678 p=1496 u=alejandro n=ansible |   1496 1593820202.67689: building list of next tasks for hosts
+2020-07-03 18:50:02,681 p=1496 u=alejandro n=ansible |   1496 1593820202.67886: getting the next task for host 10.241.176.139
+2020-07-03 18:50:02,682 p=1496 u=alejandro n=ansible |   1496 1593820202.68191: done getting next task for host 10.241.176.139
+2020-07-03 18:50:02,683 p=1496 u=alejandro n=ansible |   1496 1593820202.68265:  ^ task is: TASK: show result
+2020-07-03 18:50:02,684 p=1496 u=alejandro n=ansible |   1496 1593820202.68372:  ^ state is: HOST STATE: block=2, task=2, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-07-03 18:50:02,685 p=1496 u=alejandro n=ansible |   1496 1593820202.68483: done building task lists
+2020-07-03 18:50:02,685 p=1496 u=alejandro n=ansible |   1496 1593820202.68538: counting tasks in each state of execution
+2020-07-03 18:50:02,692 p=1496 u=alejandro n=ansible |   1496 1593820202.68615: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 1
+	num_rescue: 0
+	num_always: 0
+2020-07-03 18:50:02,693 p=1496 u=alejandro n=ansible |   1496 1593820202.69290: advancing hosts in ITERATING_TASKS
+2020-07-03 18:50:02,693 p=1496 u=alejandro n=ansible |   1496 1593820202.69358: starting to advance hosts
+2020-07-03 18:50:02,694 p=1496 u=alejandro n=ansible |   1496 1593820202.69418: getting the next task for host 10.241.176.139
+2020-07-03 18:50:02,695 p=1496 u=alejandro n=ansible |   1496 1593820202.69479: done getting next task for host 10.241.176.139
+2020-07-03 18:50:02,695 p=1496 u=alejandro n=ansible |   1496 1593820202.69544:  ^ task is: TASK: show result
+2020-07-03 18:50:02,696 p=1496 u=alejandro n=ansible |   1496 1593820202.69614:  ^ state is: HOST STATE: block=2, task=2, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-07-03 18:50:02,698 p=1496 u=alejandro n=ansible |   1496 1593820202.69732: done advancing hosts to next task
+2020-07-03 18:50:02,703 p=1496 u=alejandro n=ansible |   1496 1593820202.70038: Loading ActionModule 'debug' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/action/debug.py (found_in_cache=False, class_only=True)
+2020-07-03 18:50:02,704 p=1496 u=alejandro n=ansible |   1496 1593820202.70388: getting variables
+2020-07-03 18:50:02,704 p=1496 u=alejandro n=ansible |   1496 1593820202.70441: in VariableManager get_vars()
+2020-07-03 18:50:02,705 p=1496 u=alejandro n=ansible |   1496 1593820202.70541: Calling all_inventory to load vars for 10.241.176.139
+2020-07-03 18:50:02,706 p=1496 u=alejandro n=ansible |   1496 1593820202.70611: Calling groups_inventory to load vars for 10.241.176.139
+2020-07-03 18:50:02,707 p=1496 u=alejandro n=ansible |   1496 1593820202.70672: Calling all_plugins_inventory to load vars for 10.241.176.139
+2020-07-03 18:50:02,712 p=1496 u=alejandro n=ansible |   1496 1593820202.70792: Loading VarsModule 'host_group_vars' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,713 p=1496 u=alejandro n=ansible |   1496 1593820202.71275: Calling all_plugins_play to load vars for 10.241.176.139
+2020-07-03 18:50:02,714 p=1496 u=alejandro n=ansible |   1496 1593820202.71364: Loading VarsModule 'host_group_vars' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,715 p=1496 u=alejandro n=ansible |   1496 1593820202.71507: Calling groups_plugins_inventory to load vars for 10.241.176.139
+2020-07-03 18:50:02,717 p=1496 u=alejandro n=ansible |   1496 1593820202.71624: Loading VarsModule 'host_group_vars' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,719 p=1496 u=alejandro n=ansible |   1496 1593820202.71802: Calling groups_plugins_play to load vars for 10.241.176.139
+2020-07-03 18:50:02,722 p=1496 u=alejandro n=ansible |   1496 1593820202.71984: Loading VarsModule 'host_group_vars' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,724 p=1496 u=alejandro n=ansible |   1496 1593820202.72349: Loading VarsModule 'host_group_vars' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,725 p=1496 u=alejandro n=ansible |   1496 1593820202.72519: Loading VarsModule 'host_group_vars' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/vars/host_group_vars.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,728 p=1496 u=alejandro n=ansible |   1496 1593820202.72814: done with get_vars()
+2020-07-03 18:50:02,732 p=1496 u=alejandro n=ansible |   1496 1593820202.72947: done getting variables
+2020-07-03 18:50:02,733 p=1496 u=alejandro n=ansible |   1496 1593820202.73296: sending task start callback, copying the task so we can template it temporarily
+2020-07-03 18:50:02,734 p=1496 u=alejandro n=ansible |   1496 1593820202.73386: done copying, going to template now
+2020-07-03 18:50:02,734 p=1496 u=alejandro n=ansible |   1496 1593820202.73454: done templating
+2020-07-03 18:50:02,735 p=1496 u=alejandro n=ansible |   1496 1593820202.73519: here goes the callback...
+2020-07-03 18:50:02,736 p=1496 u=alejandro n=ansible | TASK [show result] *****************************************************************************************************************************************************
+2020-07-03 18:50:02,737 p=1496 u=alejandro n=ansible | task path: /home/alejandro/an02/lab2/playbook-example.yml:20
+2020-07-03 18:50:02,739 p=1496 u=alejandro n=ansible |   1496 1593820202.73789: sending task start callback
+2020-07-03 18:50:02,742 p=1496 u=alejandro n=ansible |   1496 1593820202.73988: entering _queue_task() for 10.241.176.139/debug
+2020-07-03 18:50:02,743 p=1496 u=alejandro n=ansible |   1496 1593820202.74278: Creating lock for debug
+2020-07-03 18:50:02,757 p=1496 u=alejandro n=ansible |   1496 1593820202.75673: worker is 1 (out of 1 available)
+2020-07-03 18:50:02,759 p=1496 u=alejandro n=ansible |   1496 1593820202.75885: exiting _queue_task() for 10.241.176.139/debug
+2020-07-03 18:50:02,760 p=1496 u=alejandro n=ansible |   1496 1593820202.76008: done queuing things up, now waiting for results queue to drain
+2020-07-03 18:50:02,761 p=1496 u=alejandro n=ansible |   1496 1593820202.76079: waiting for pending results...
+2020-07-03 18:50:02,764 p=1535 u=alejandro n=ansible |   1535 1593820202.76286: running TaskExecutor() for 10.241.176.139/TASK: show result
+2020-07-03 18:50:02,769 p=1535 u=alejandro n=ansible |   1535 1593820202.76661: in run() - task 9829a686-2703-ba49-52d9-000000000009
+2020-07-03 18:50:02,771 p=1535 u=alejandro n=ansible |   1535 1593820202.77144: calling self._execute()
+2020-07-03 18:50:02,779 p=1535 u=alejandro n=ansible |   1535 1593820202.77950: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection
+2020-07-03 18:50:02,783 p=1535 u=alejandro n=ansible |   1535 1593820202.78152: Loading Connection 'local' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/connection/local.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,784 p=1535 u=alejandro n=ansible |   1535 1593820202.78439: trying /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell
+2020-07-03 18:50:02,785 p=1535 u=alejandro n=ansible |   1535 1593820202.78551: Loading ShellModule 'sh' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,787 p=1535 u=alejandro n=ansible |   1535 1593820202.78633: Loading ShellModule 'sh' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,791 p=1535 u=alejandro n=ansible |   1535 1593820202.78848: Loading ActionModule 'debug' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/action/debug.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,792 p=1535 u=alejandro n=ansible |   1535 1593820202.79228: starting attempt loop
+2020-07-03 18:50:02,793 p=1535 u=alejandro n=ansible |   1535 1593820202.79302: running the handler
+2020-07-03 18:50:02,808 p=1535 u=alejandro n=ansible |   1535 1593820202.80838: Loading FilterModule 'core' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/core.py
+2020-07-03 18:50:02,812 p=1535 u=alejandro n=ansible |   1535 1593820202.81221: Loading FilterModule 'gcp_kms_filters' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/gcp_kms_filters.py
+2020-07-03 18:50:02,815 p=1535 u=alejandro n=ansible |   1535 1593820202.81473: Loading FilterModule 'ipaddr' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py
+2020-07-03 18:50:02,816 p=1535 u=alejandro n=ansible |   1535 1593820202.81633: Loading FilterModule 'json_query' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py
+2020-07-03 18:50:02,818 p=1535 u=alejandro n=ansible |   1535 1593820202.81825: Loading FilterModule 'k8s' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/k8s.py
+2020-07-03 18:50:02,820 p=1535 u=alejandro n=ansible |   1535 1593820202.81994: Loading FilterModule 'mathstuff' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py
+2020-07-03 18:50:02,822 p=1535 u=alejandro n=ansible |   1535 1593820202.82192: Loading FilterModule 'network' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/network.py
+2020-07-03 18:50:02,823 p=1535 u=alejandro n=ansible |   1535 1593820202.82343: Loading FilterModule 'urls' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/urls.py
+2020-07-03 18:50:02,824 p=1535 u=alejandro n=ansible |   1535 1593820202.82472: Loading FilterModule 'urlsplit' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/urlsplit.py
+2020-07-03 18:50:02,828 p=1535 u=alejandro n=ansible |   1535 1593820202.82797: Loading TestModule 'core' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/test/core.py
+2020-07-03 18:50:02,830 p=1535 u=alejandro n=ansible |   1535 1593820202.82920: Loading TestModule 'files' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/test/files.py
+2020-07-03 18:50:02,832 p=1535 u=alejandro n=ansible |   1535 1593820202.83177: Loading TestModule 'mathstuff' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py
+2020-07-03 18:50:02,836 p=1535 u=alejandro n=ansible |   1535 1593820202.83605: Loading FilterModule 'core' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/core.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,837 p=1535 u=alejandro n=ansible |   1535 1593820202.83665: Loading FilterModule 'gcp_kms_filters' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/gcp_kms_filters.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,841 p=1535 u=alejandro n=ansible |   1535 1593820202.83824: Loading FilterModule 'ipaddr' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,842 p=1535 u=alejandro n=ansible |   1535 1593820202.84194: Loading FilterModule 'json_query' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,843 p=1535 u=alejandro n=ansible |   1535 1593820202.84266: Loading FilterModule 'k8s' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/k8s.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,844 p=1535 u=alejandro n=ansible |   1535 1593820202.84396: Loading FilterModule 'mathstuff' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,845 p=1535 u=alejandro n=ansible |   1535 1593820202.84514: Loading FilterModule 'network' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/network.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,851 p=1535 u=alejandro n=ansible |   1535 1593820202.84636: Loading FilterModule 'urls' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/urls.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,853 p=1535 u=alejandro n=ansible |   1535 1593820202.85231: Loading FilterModule 'urlsplit' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/filter/urlsplit.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,854 p=1535 u=alejandro n=ansible |   1535 1593820202.85426: Loading TestModule 'core' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/test/core.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,856 p=1535 u=alejandro n=ansible |   1535 1593820202.85532: Loading TestModule 'files' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/test/files.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,860 p=1535 u=alejandro n=ansible |   1535 1593820202.85650: Loading TestModule 'mathstuff' from /home/alejandro/an02/py2-venv/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py (found_in_cache=True, class_only=False)
+2020-07-03 18:50:02,862 p=1535 u=alejandro n=ansible |   1535 1593820202.86269: handler run complete
+2020-07-03 18:50:02,863 p=1535 u=alejandro n=ansible |   1535 1593820202.86346: attempt loop complete, returning result
+2020-07-03 18:50:02,864 p=1535 u=alejandro n=ansible |   1535 1593820202.86414: _execute() done
+2020-07-03 18:50:02,865 p=1535 u=alejandro n=ansible |   1535 1593820202.86479: dumping result to json
+2020-07-03 18:50:02,865 p=1535 u=alejandro n=ansible |   1535 1593820202.86565: done dumping result, returning
+2020-07-03 18:50:02,868 p=1535 u=alejandro n=ansible |   1535 1593820202.86645: done running TaskExecutor() for 10.241.176.139/TASK: show result [9829a686-2703-ba49-52d9-000000000009]
+2020-07-03 18:50:02,871 p=1535 u=alejandro n=ansible |   1535 1593820202.86874: sending task result for task 9829a686-2703-ba49-52d9-000000000009
+2020-07-03 18:50:02,873 p=1535 u=alejandro n=ansible |   1535 1593820202.87223: done sending task result for task 9829a686-2703-ba49-52d9-000000000009
+2020-07-03 18:50:02,873 p=1535 u=alejandro n=ansible |   1535 1593820202.87334: WORKER PROCESS EXITING
+2020-07-03 18:50:02,925 p=1496 u=alejandro n=ansible | ok: [10.241.176.139] => {
+    "snmp[\"stdout_lines\"][0]": [
+        "permit udp host 10.241.176.139 eq snmp any", 
+        " permit udp host 10.241.176.139 any eq snmp", 
+        "snmp-server community netview RW 95", 
+        "snmp-server community 3PnM4n4g3R_2017! RO", 
+        "snmp-server community 4TTipbh16 RW 97", 
+        "snmp-server community Pr1m3Su1t3_2016 RW 98", 
+        "snmp-server community 0SSN3TC00L RW 99", 
+        "snmp-server trap-source Loopback1", 
+        "snmp-server location Tijuana", 
+        "snmp-server contact mx.noc.ipbh@mx.att.com", 
+        "snmp-server enable traps snmp authentication linkdown linkup coldstart warmstart", 
+        "snmp-server enable traps license", 
+        "snmp-server enable traps bfd", 
+        "snmp-server enable traps bgp", 
+        "snmp-server enable traps bgp cbgp2", 
+        "snmp-server enable traps config-copy", 
+        "snmp-server enable traps config", 
+        "snmp-server enable traps config-ctid", 
+        "snmp-server enable traps event-manager", 
+        "snmp-server enable traps isis", 
+        "snmp-server enable traps syslog", 
+        "snmp-server enable traps memory bufferpeak", 
+        "snmp-server enable traps entity-state", 
+        "snmp-server enable traps fru-ctrl", 
+        "snmp-server enable traps entity", 
+        "snmp-server enable traps cpu threshold", 
+        "snmp-server enable traps rep", 
+        "snmp-server enable traps cef resource-failure peer-state-change peer-fib-state-change inconsistency", 
+        "snmp-server enable traps resource-policy", 
+        "snmp-server enable traps flash insertion", 
+        "snmp-server enable traps flash removal", 
+        "snmp-server enable traps netsync", 
+        "snmp-server enable traps aaa_server", 
+        "snmp-server enable traps mpls rfc ldp", 
+        "snmp-server enable traps mpls ldp", 
+        "snmp-server enable traps mpls fast-reroute protected", 
+        "snmp-server enable traps pw vc", 
+        "snmp-server enable traps alarms informational", 
+        "snmp-server enable traps mac-notification", 
+        "snmp-server enable traps ethernet cfm alarm", 
+        "snmp-server enable traps transceiver all", 
+        "snmp-server enable traps mpls vpn", 
+        "snmp-server enable traps mpls rfc vpn", 
+        "snmp-server host 10.32.242.138 vrf ATT_OAM version 2c 0SSN3TC00L ", 
+        "snmp-server host 10.32.242.139 vrf ATT_OAM version 2c 0SSN3TC00L ", 
+        "snmp-server host 10.32.242.143 vrf ATT_OAM version 2c 0SSN3TC00L ", 
+        "snmp-server host 10.32.209.28 vrf ATT_OAM version 2c 3PnM4n4g3R_2017! ", 
+        "snmp-server host 10.36.226.108 vrf ATT_OAM version 2c 3PnM4n4g3R_2017! ", 
+        "snmp-server host 172.19.235.148 vrf ATT_OAM version 2c 4TTipbh16 ", 
+        "snmp-server host 172.19.236.160 vrf ATT_OAM version 2c 4TTipbh16 ", 
+        "snmp-server host 10.32.250.68 vrf ATT_OAM version 2c Pr1m3Su1t3_2016 ", 
+        "snmp-server host 10.36.1.68 vrf ATT_OAM version 2c Pr1m3Su1t3_2016 ", 
+        "snmp-server host 10.150.10.195 vrf ATT_OAM version 2c netview ", 
+        "snmp-server host 10.150.10.200 vrf ATT_OAM version 2c netview ", 
+        "snmp-server host 10.150.10.201 vrf ATT_OAM version 2c netview ", 
+        "snmp-server host 10.150.10.203 vrf ATT_OAM version 2c netview ", 
+        "snmp-server host 10.150.10.204 vrf ATT_OAM version 2c netview ", 
+        "snmp-server host 10.150.10.205 vrf ATT_OAM version 2c netview ", 
+        "snmp-server host 10.150.10.210 vrf ATT_OAM version 2c netview ", 
+        "snmp-server host 10.150.10.236 vrf ATT_OAM version 2c netview ", 
+        "snmp-server host 10.32.240.171 vrf ATT_OAM version 2c netview ", 
+        "snmp ifmib ifindex persist"
+    ]
+}
+2020-07-03 18:50:02,926 p=1496 u=alejandro n=ansible |   1496 1593820202.92641: no more pending results, returning what we have
+2020-07-03 18:50:02,927 p=1496 u=alejandro n=ansible |   1496 1593820202.92702: results queue empty
+2020-07-03 18:50:02,929 p=1496 u=alejandro n=ansible |   1496 1593820202.92765: checking for any_errors_fatal
+2020-07-03 18:50:02,932 p=1496 u=alejandro n=ansible |   1496 1593820202.93008: done checking for any_errors_fatal
+2020-07-03 18:50:02,932 p=1496 u=alejandro n=ansible |   1496 1593820202.93250: checking for max_fail_percentage
+2020-07-03 18:50:02,933 p=1496 u=alejandro n=ansible |   1496 1593820202.93313: done checking for max_fail_percentage
+2020-07-03 18:50:02,934 p=1496 u=alejandro n=ansible |   1496 1593820202.93407: checking to see if all hosts have failed and the running result is not ok
+2020-07-03 18:50:02,935 p=1496 u=alejandro n=ansible |   1496 1593820202.93463: done checking to see if all hosts have failed
+2020-07-03 18:50:02,935 p=1496 u=alejandro n=ansible |   1496 1593820202.93533: getting the remaining hosts for this loop
+2020-07-03 18:50:02,936 p=1496 u=alejandro n=ansible |   1496 1593820202.93596: done getting the remaining hosts for this loop
+2020-07-03 18:50:02,936 p=1496 u=alejandro n=ansible |   1496 1593820202.93665: building list of next tasks for hosts
+2020-07-03 18:50:02,937 p=1496 u=alejandro n=ansible |   1496 1593820202.93721: getting the next task for host 10.241.176.139
+2020-07-03 18:50:02,939 p=1496 u=alejandro n=ansible |   1496 1593820202.93796: done getting next task for host 10.241.176.139
+2020-07-03 18:50:02,942 p=1496 u=alejandro n=ansible |   1496 1593820202.94004:  ^ task is: TASK: meta (flush_handlers)
+2020-07-03 18:50:02,943 p=1496 u=alejandro n=ansible |   1496 1593820202.94300:  ^ state is: HOST STATE: block=3, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-07-03 18:50:02,944 p=1496 u=alejandro n=ansible |   1496 1593820202.94422: done building task lists
+2020-07-03 18:50:02,945 p=1496 u=alejandro n=ansible |   1496 1593820202.94490: counting tasks in each state of execution
+2020-07-03 18:50:02,949 p=1496 u=alejandro n=ansible |   1496 1593820202.94551: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 1
+	num_rescue: 0
+	num_always: 0
+2020-07-03 18:50:02,953 p=1496 u=alejandro n=ansible |   1496 1593820202.94967: advancing hosts in ITERATING_TASKS
+2020-07-03 18:50:02,954 p=1496 u=alejandro n=ansible |   1496 1593820202.95366: starting to advance hosts
+2020-07-03 18:50:02,954 p=1496 u=alejandro n=ansible |   1496 1593820202.95437: getting the next task for host 10.241.176.139
+2020-07-03 18:50:02,955 p=1496 u=alejandro n=ansible |   1496 1593820202.95499: done getting next task for host 10.241.176.139
+2020-07-03 18:50:02,955 p=1496 u=alejandro n=ansible |   1496 1593820202.95555:  ^ task is: TASK: meta (flush_handlers)
+2020-07-03 18:50:02,956 p=1496 u=alejandro n=ansible |   1496 1593820202.95610:  ^ state is: HOST STATE: block=3, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-07-03 18:50:02,957 p=1496 u=alejandro n=ansible |   1496 1593820202.95675: done advancing hosts to next task
+2020-07-03 18:50:02,959 p=1496 u=alejandro n=ansible | META: ran handlers
+2020-07-03 18:50:02,962 p=1496 u=alejandro n=ansible |   1496 1593820202.95962: done queuing things up, now waiting for results queue to drain
+2020-07-03 18:50:02,962 p=1496 u=alejandro n=ansible |   1496 1593820202.96261: results queue empty
+2020-07-03 18:50:02,963 p=1496 u=alejandro n=ansible |   1496 1593820202.96330: checking for any_errors_fatal
+2020-07-03 18:50:02,964 p=1496 u=alejandro n=ansible |   1496 1593820202.96393: done checking for any_errors_fatal
+2020-07-03 18:50:02,964 p=1496 u=alejandro n=ansible |   1496 1593820202.96454: checking for max_fail_percentage
+2020-07-03 18:50:02,965 p=1496 u=alejandro n=ansible |   1496 1593820202.96521: done checking for max_fail_percentage
+2020-07-03 18:50:02,966 p=1496 u=alejandro n=ansible |   1496 1593820202.96622: checking to see if all hosts have failed and the running result is not ok
+2020-07-03 18:50:02,967 p=1496 u=alejandro n=ansible |   1496 1593820202.96734: done checking to see if all hosts have failed
+2020-07-03 18:50:02,972 p=1496 u=alejandro n=ansible |   1496 1593820202.96796: getting the remaining hosts for this loop
+2020-07-03 18:50:02,972 p=1496 u=alejandro n=ansible |   1496 1593820202.97242: done getting the remaining hosts for this loop
+2020-07-03 18:50:02,973 p=1496 u=alejandro n=ansible |   1496 1593820202.97320: building list of next tasks for hosts
+2020-07-03 18:50:02,974 p=1496 u=alejandro n=ansible |   1496 1593820202.97387: getting the next task for host 10.241.176.139
+2020-07-03 18:50:02,974 p=1496 u=alejandro n=ansible |   1496 1593820202.97454: done getting next task for host 10.241.176.139
+2020-07-03 18:50:02,975 p=1496 u=alejandro n=ansible |   1496 1593820202.97522:  ^ task is: TASK: meta (flush_handlers)
+2020-07-03 18:50:02,976 p=1496 u=alejandro n=ansible |   1496 1593820202.97586:  ^ state is: HOST STATE: block=4, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-07-03 18:50:02,977 p=1496 u=alejandro n=ansible |   1496 1593820202.97695: done building task lists
+2020-07-03 18:50:02,979 p=1496 u=alejandro n=ansible |   1496 1593820202.97752: counting tasks in each state of execution
+2020-07-03 18:50:02,984 p=1496 u=alejandro n=ansible |   1496 1593820202.97953: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 1
+	num_rescue: 0
+	num_always: 0
+2020-07-03 18:50:02,985 p=1496 u=alejandro n=ansible |   1496 1593820202.98496: advancing hosts in ITERATING_TASKS
+2020-07-03 18:50:02,985 p=1496 u=alejandro n=ansible |   1496 1593820202.98554: starting to advance hosts
+2020-07-03 18:50:02,986 p=1496 u=alejandro n=ansible |   1496 1593820202.98621: getting the next task for host 10.241.176.139
+2020-07-03 18:50:02,987 p=1496 u=alejandro n=ansible |   1496 1593820202.98689: done getting next task for host 10.241.176.139
+2020-07-03 18:50:02,989 p=1496 u=alejandro n=ansible |   1496 1593820202.98749:  ^ task is: TASK: meta (flush_handlers)
+2020-07-03 18:50:02,992 p=1496 u=alejandro n=ansible |   1496 1593820202.98962:  ^ state is: HOST STATE: block=4, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-07-03 18:50:02,993 p=1496 u=alejandro n=ansible |   1496 1593820202.99292: done advancing hosts to next task
+2020-07-03 18:50:02,994 p=1496 u=alejandro n=ansible | META: ran handlers
+2020-07-03 18:50:02,994 p=1496 u=alejandro n=ansible |   1496 1593820202.99448: done queuing things up, now waiting for results queue to drain
+2020-07-03 18:50:02,995 p=1496 u=alejandro n=ansible |   1496 1593820202.99515: results queue empty
+2020-07-03 18:50:02,996 p=1496 u=alejandro n=ansible |   1496 1593820202.99570: checking for any_errors_fatal
+2020-07-03 18:50:02,996 p=1496 u=alejandro n=ansible |   1496 1593820202.99639: done checking for any_errors_fatal
+2020-07-03 18:50:02,997 p=1496 u=alejandro n=ansible |   1496 1593820202.99708: checking for max_fail_percentage
+2020-07-03 18:50:02,999 p=1496 u=alejandro n=ansible |   1496 1593820202.99763: done checking for max_fail_percentage
+2020-07-03 18:50:03,003 p=1496 u=alejandro n=ansible |   1496 1593820202.99972: checking to see if all hosts have failed and the running result is not ok
+2020-07-03 18:50:03,003 p=1496 u=alejandro n=ansible |   1496 1593820203.00366: done checking to see if all hosts have failed
+2020-07-03 18:50:03,004 p=1496 u=alejandro n=ansible |   1496 1593820203.00434: getting the remaining hosts for this loop
+2020-07-03 18:50:03,005 p=1496 u=alejandro n=ansible |   1496 1593820203.00501: done getting the remaining hosts for this loop
+2020-07-03 18:50:03,005 p=1496 u=alejandro n=ansible |   1496 1593820203.00563: building list of next tasks for hosts
+2020-07-03 18:50:03,006 p=1496 u=alejandro n=ansible |   1496 1593820203.00622: getting the next task for host 10.241.176.139
+2020-07-03 18:50:03,007 p=1496 u=alejandro n=ansible |   1496 1593820203.00690: done getting next task for host 10.241.176.139
+2020-07-03 18:50:03,009 p=1496 u=alejandro n=ansible |   1496 1593820203.00747:  ^ task is: None
+2020-07-03 18:50:03,012 p=1496 u=alejandro n=ansible |   1496 1593820203.00936:  ^ state is: HOST STATE: block=5, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-07-03 18:50:03,013 p=1496 u=alejandro n=ansible |   1496 1593820203.01283: done building task lists
+2020-07-03 18:50:03,013 p=1496 u=alejandro n=ansible |   1496 1593820203.01340: counting tasks in each state of execution
+2020-07-03 18:50:03,016 p=1496 u=alejandro n=ansible |   1496 1593820203.01422: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 0
+	num_rescue: 0
+	num_always: 0
+2020-07-03 18:50:03,018 p=1496 u=alejandro n=ansible |   1496 1593820203.01743: all hosts are done, so returning None's for all hosts
+2020-07-03 18:50:03,021 p=1496 u=alejandro n=ansible |   1496 1593820203.01940: done queuing things up, now waiting for results queue to drain
+2020-07-03 18:50:03,022 p=1496 u=alejandro n=ansible |   1496 1593820203.02228: results queue empty
+2020-07-03 18:50:03,023 p=1496 u=alejandro n=ansible |   1496 1593820203.02293: checking for any_errors_fatal
+2020-07-03 18:50:03,023 p=1496 u=alejandro n=ansible |   1496 1593820203.02352: done checking for any_errors_fatal
+2020-07-03 18:50:03,024 p=1496 u=alejandro n=ansible |   1496 1593820203.02414: checking for max_fail_percentage
+2020-07-03 18:50:03,025 p=1496 u=alejandro n=ansible |   1496 1593820203.02480: done checking for max_fail_percentage
+2020-07-03 18:50:03,025 p=1496 u=alejandro n=ansible |   1496 1593820203.02541: checking to see if all hosts have failed and the running result is not ok
+2020-07-03 18:50:03,026 p=1496 u=alejandro n=ansible |   1496 1593820203.02601: done checking to see if all hosts have failed
+2020-07-03 18:50:03,028 p=1496 u=alejandro n=ansible |   1496 1593820203.02662: getting the next task for host 10.241.176.139
+2020-07-03 18:50:03,031 p=1496 u=alejandro n=ansible |   1496 1593820203.02857: done getting next task for host 10.241.176.139
+2020-07-03 18:50:03,031 p=1496 u=alejandro n=ansible |   1496 1593820203.03158:  ^ task is: None
+2020-07-03 18:50:03,033 p=1496 u=alejandro n=ansible |   1496 1593820203.03227:  ^ state is: HOST STATE: block=5, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2020-07-03 18:50:03,034 p=1496 u=alejandro n=ansible |   1496 1593820203.03376: running handlers
+2020-07-03 18:50:03,034 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | [chan 0] EOF sent (0)
+2020-07-03 18:50:03,115 p=1507 u=alejandro n=p=1507 u=alejandro | paramiko [10.241.176.139] | EOF in transport thread
+2020-07-03 18:50:03,165 p=1496 u=alejandro n=ansible | PLAY RECAP *************************************************************************************************************************************************************
+2020-07-03 18:50:03,170 p=1496 u=alejandro n=ansible | 10.241.176.139             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-07-03 18:50:03,182 p=1496 u=alejandro n=ansible |   1496 1593820203.17785: RUNNING CLEANUP
+2020-07-03 18:50:03,255 p=1507 u=alejandro n=ansible | shutdown complete

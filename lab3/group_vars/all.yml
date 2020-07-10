@@ -1,0 +1,9 @@
+---
+
+ansible_python_interpreter: /usr/bin/env python3
+base_provider:
+  username: ATT9047833
+  password: M3x#4Tt.20i9Fa
+  host: "{{ inventory_hostname }}"
+  timeout: 1000
+

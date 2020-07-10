@@ -1,0 +1,22 @@
+---
+
+ - name: PLAY1 - ISSUE SNMP COMMANDS
+   hosts: csr
+   gather_facts: false
+   connection: local
+  
+   tasks:
+
+      - name: TASK1 - DEPLOY SNMP COMMANDS
+        ios_command:
+          commands:
+            - show run | inc snmp
+          provider:
+            username: ATT9047833
+            password: M3x#4Tt.20i9Fa
+            host: "{{ inventory_hostname }}"
+            timeout: 1000
+        register: snmp
+      - name: show result 
+        debug:
+          var: snmp["stdout_lines"][0]

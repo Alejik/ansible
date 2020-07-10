@@ -1,0 +1,6 @@
+---
+
+route_targets:
+  vrf: ATT_LTE
+  rt_import: 7438:1228101
+  rt_export: 7438:1228101

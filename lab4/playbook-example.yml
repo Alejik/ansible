@@ -1,0 +1,17 @@
+---
+
+ - name: PLAY1 - ISSUE SNMP COMMANDS
+   hosts: csr
+   gather_facts: false
+   connection: local
+  
+   tasks:
+
+      - name: TASK1 - DEPLOY SNMP COMMANDS
+        ios_command:
+          commands:
+            - show run | inc snmp
+        register: snmp
+      - name: show result 
+        debug:
+          var: snmp["stdout_lines"][0]
