@@ -1,0 +1,66 @@
+---
+
+ - name: PLAY1 - COLLECT HOSTNAME
+   hosts: mty-asr
+   gather_facts: false
+   connection: local
+  
+   tasks:
+
+      - name: COLLECT HOSTNAME´S FOR IOS
+        ios_facts:
+          provider: "{{ base_provider }}"
+
+      - name: DEBUG HOSTNAME
+        debug:
+          var: ansible_net_hostname
+
+      - name: IOS_COMMAND TO GET LTE RT´S
+        ios_command:
+          provider: "{{ base_provider }}"
+          commands:
+            - show running | sec LTE
+        register: lte_data
+
+      - name: DEBUG FULL LTE RTs
+        debug:
+          var: lte_data
+
+      - name: EXTRACTING JUST THE RTs FOR LTE
+        set_fact:
+          rt_lte: "{{ lte_data.stdout_lines.0 }}"
+
+      - name: DEBUG ONLY RT
+        debug:
+          var: rt_lte
+
+      - name: COMPARING ASSERT
+        assert:
+          that:
+            - "'  route-target export 7438:1228401' in rt_lte"
+            - "'  route-target import 7438:1228401' in rt_lte"
+          fail_msg: "EL '7438:1228101' NO se encuentra configurado en {{ ansible_net_hostname }}"
+          success_msg: "EL '7438:1228101' se encuentra configurado en {{ ansible_net_hostname }}"
+
+ - name: PLAY2 - REPORTS
+   hosts: mty-asr
+   gather_facts: false
+   connection: local
+   
+   tasks:
+
+    - name: GENERATING DEVICE REPORTS
+      template:
+       src: ./reports/template_reports.j2
+       dest: ./reports/result/{{ ansible_net_hostname }}.md
+
+    - name: CREATING MASTER REPORT
+      assemble:
+       src: ./reports/result/
+       dest: ./reports/master-report.md
+       delimiter: "***"
+      run_once: true
+
+
+
+

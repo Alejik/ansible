@@ -1,5 +1,6 @@
 ---
 
+host_key_checking: False
 ansible_python_interpreter: /usr/bin/env python3
 base_provider:
   username: ATT9047833

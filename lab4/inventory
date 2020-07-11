@@ -1,5 +1,6 @@
 [all:vars]
 #ansible_python_interpreter = "/usr/bin/env python"
+host_key_checking = False
 
 [monterrey:children]
 mty-asr
@@ -7,7 +8,10 @@ mty-alu
 mty-cx
 
 [mty-asr]
-10.241.176.139
+#10.241.176.139
+10.241.101.10
+10.241.101.11
+10.241.101.13
 
 [mty-alu]
 

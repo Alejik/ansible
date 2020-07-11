@@ -1,0 +1,13 @@
+---
+
+ - name: PLAY1 - COLLECT HOSTNAME
+   hosts: mty-asr
+   gather_facts: false
+   connection: local
+  
+   tasks:
+
+      - name: Write the new ec2 instance host key to known hosts
+        connection: local
+        shell: "ssh-keyscan -H {{ inventory_hostname }} >> ~/.ssh/known_hosts"
+ 
